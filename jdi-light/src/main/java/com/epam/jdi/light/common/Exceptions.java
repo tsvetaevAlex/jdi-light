@@ -11,4 +11,5 @@ public class Exceptions {
         String message = format(msg, args);
         return new RuntimeException(LINE_BREAK + message);
     }
+    
 }
