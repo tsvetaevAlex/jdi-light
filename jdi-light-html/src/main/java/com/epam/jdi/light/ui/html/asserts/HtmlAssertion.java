@@ -75,73 +75,138 @@ public class HtmlAssertion extends IsAssert<HtmlAssertion> implements ImageAsser
         return this;
     }
 
+    /**
+     * Match passed value with html element rows count
+     * @param condition to compare
+     */
     @JDIAction("Assert that '{name}' rows count {0}")
     public HtmlAssertion rowsCount(Matcher<Integer> condition) {
         assertThat(html.rows(), condition);
         return this;
     }
+
+    /**
+     * Match passed value with html element cols count
+     * @param condition to compare
+     */
     @JDIAction("Assert that '{name}' columns count {0}")
     public HtmlAssertion colsCount(Matcher<Integer> condition) {
         assertThat(html.cols(), condition);
         return this;
     }
+
+    /**
+     * Match passed value with html element min length
+     * @param condition to compare
+     */
     @JDIAction("Assert that '{name}' minlength {0}")
     public HtmlAssertion minlength(Matcher<Integer> condition) {
         assertThat(html.minlength(), condition);
         return this;
     }
+
+    /**
+     * Match passed value with html element max length
+     * @param condition to compare
+     */
     @JDIAction("Assert that '{name}' maxlength {0}")
     public HtmlAssertion maxlength(Matcher<Integer> condition) {
         assertThat(html.maxlength(), condition);
         return this;
     }
 
+    /**
+     * Match passed color with html element color
+     * @param color String
+     */
     @JDIAction("Assert that '{name}' color is {0}")
     public HtmlAssertion color(String color) {
         assertThat(html.color(), is(color));
         return this;
     }
+
+    /**
+     * Match the selected status html element status
+     */
     @JDIAction("Assert that '{name}' is selected")
     public HtmlAssertion selected() {
         assertThat(html.isSelected() ? "selected" : "not selected", is("selected"));
         return this;
     }
+
+    /**
+     * Match the not selected status  html element status
+     */
     @JDIAction("Assert that '{name}' is not selected")
     public HtmlAssertion deselected() {
         assertThat(html.isSelected() ? "selected" : "not selected", is("not selected"));
         return this;
     }
+
+    /**
+     * Match passed value with html element double min value
+     * @param min to compare
+     */
     @JDIAction("Assert that '{name}' minValue {0}")
     public HtmlAssertion minValue(Matcher<Double> min) {
         assertThat(getDouble("min", html), min);
         return this;
     }
+
+    /**
+     * Match passed value with html element double max value
+     * @param max to compare
+     */
     @JDIAction("Assert that '{name}' maxValue {0}")
     public HtmlAssertion maxValue(Matcher<Double> max) {
         assertThat(getDouble("max", html), max);
         return this;
     }
+
+    /**
+     * Match passed value with html element step value
+     * @param step to compare
+     */
     @JDIAction("Assert that '{name}' step {0}")
     public HtmlAssertion stepValue(Matcher<Double> step) {
         assertThat(getDouble("step", html), step);
         return this;
     }
+
+    /**
+     * Match passed value with html element placeholder value
+     * @param placeholder to compare
+     */
     @JDIAction("Assert that '{name}' placeholder {0}")
     public HtmlAssertion placeholder(Matcher<String> placeholder) {
         assertThat(html.placeholder(), placeholder);
         return this;
     }
+
+    /**
+     * Match passed value with html element value
+     * @param number to compare
+     */
     @JDIAction("Assert that '{name}' number {0}")
     public HtmlAssertion number(Matcher<Double> number) {
         assertThat(getDouble("value", html), number);
         return this;
     }
+
+    /**
+     * Match passed value with html element float min value
+     * @param min to compare
+     */
     @JDIAction("Assert that '{name}' min {0}")
     public HtmlAssertion min(Matcher<Float> min) {
         assertThat(getFloat("min", html), min);
         return this;
     }
 
+    /**
+     * Match passed value with html element float max value
+     * @param max to compare
+     */
     @JDIAction("Assert that '{name}' max {0}")
     public HtmlAssertion max(Matcher<Float> max) {
         assertThat(getFloat("max", html), max);

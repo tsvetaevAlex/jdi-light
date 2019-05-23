@@ -40,6 +40,6 @@ public class HtmlUtils {
         String value = el.getAttribute(attr);
         try {
             return parseFloat(value);
-        } catch (Exception ex) { throw exception("Can't parse attribute '%s=%s' to Double", attr, value); }
+        } catch (Exception ex) { throw exception("Can't parse attribute '%s=%s' to Float", attr, value); }
     }
 }

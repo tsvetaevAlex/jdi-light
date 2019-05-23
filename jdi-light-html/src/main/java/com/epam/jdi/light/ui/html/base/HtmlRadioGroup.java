@@ -20,6 +20,12 @@ public class HtmlRadioGroup extends Selector<HtmlElement> implements RadioButton
     By radioButton = cssSelector("input[type=radio][id='%s']");
     By label = LABEL_LOCATOR;
     private String getId(String name) { return label(name).getAttribute("for"); }
+
+    /**
+     * Gets value by name
+     * @param value String
+     * @return HtmlElement
+     */
     public HtmlElement get(String value) {
         return $(fillByTemplate(radioButton, getId(value)), parent).setName(value);
     }
@@ -114,10 +120,19 @@ public class HtmlRadioGroup extends Selector<HtmlElement> implements RadioButton
         return ifSelect(radioButtons(), HtmlElement::isDisabled, HtmlElement::labelText);
     }
 
+    /**
+     * Selects a radio based on value
+     * @param value String to select
+     */
     @Override
     public void setValue(String value) {
         select(value);
     }
+
+    /**
+     * Gets a selected radio
+     * @return String
+     */
     @Override
     public String getValue() {
         return selected();
