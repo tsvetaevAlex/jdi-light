@@ -75,6 +75,10 @@ public class HtmlMultiDropdown extends Selector<HtmlElement>
         }
     }
 
+    /**
+     * Checks particular elements separated "," by names
+     * @param names String
+     */
     public void check(String names) {
         if (isBlank(names)) return;
         check(names.split(","));
@@ -115,10 +119,19 @@ public class HtmlMultiDropdown extends Selector<HtmlElement>
                 value.click();
         }
     }
+
+    /**
+     * Checks particular elements by values
+     * @param values TEnum
+     */
     public <TEnum extends Enum> void check(TEnum... values) {
         check(getEnumValues(values));
     }
 
+    /**
+     * Unchecks particular elements by values
+     * @param values TEnum
+     */
     public <TEnum extends Enum> void uncheck(TEnum... values) {
         uncheck(getEnumValues(values));
     }
@@ -251,6 +264,10 @@ public class HtmlMultiDropdown extends Selector<HtmlElement>
         return selected().trim().equalsIgnoreCase(value.trim());
     }
 
+    /**
+     * Gets selected value
+     * @return String
+     */
     @Override
     public String getValue() {
         return selected();

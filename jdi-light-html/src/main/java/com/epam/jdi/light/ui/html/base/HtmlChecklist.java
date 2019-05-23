@@ -65,6 +65,11 @@ public class HtmlChecklist extends Selector<HtmlElement> implements Checklist, I
                 value.click();
         }
     }
+
+    /**
+     * Selects particular elements by values
+     * @param value TEnum
+     */
     public <TEnum extends Enum> void select(TEnum... value) {
         select(toStringArray(map(value, EnumUtils::getEnumValue)));
     }
@@ -116,10 +121,19 @@ public class HtmlChecklist extends Selector<HtmlElement> implements Checklist, I
                 value.click();
         }
     }
+
+    /**
+     * Checks particular elements by values
+     * @param values TEnum
+     */
     public <TEnum extends Enum> void check(TEnum... values) {
         check(getEnumValues(values));
     }
 
+    /**
+     * Uncheck particular elements by values
+     * @param values TEnum
+     */
     public <TEnum extends Enum> void uncheck(TEnum... values) {
         uncheck(getEnumValues(values));
     }

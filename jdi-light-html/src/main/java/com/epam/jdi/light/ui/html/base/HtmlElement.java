@@ -202,12 +202,10 @@ public class HtmlElement extends BaseUIElement<HtmlElement> implements Text, But
     public HtmlAssertion is() {
         return new HtmlAssertion(this);
     }
-
     @Override
     public HtmlAssertion assertThat() {
       return is();
     }
-
     @Override
     public HtmlAssertion has() {
         return is();
