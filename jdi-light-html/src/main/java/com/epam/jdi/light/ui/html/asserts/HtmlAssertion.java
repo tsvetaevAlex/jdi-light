@@ -213,44 +213,80 @@ public class HtmlAssertion extends IsAssert<HtmlAssertion> implements ImageAsser
         return this;
     }
 
+    /**
+     * Match passed value with html element volume
+     * @param volume to compare
+     */
     @JDIAction("Assert that '{name}' volume {0}")
     public HtmlAssertion volume(Matcher<Integer> volume) {
         assertThat(getInt("value", html), volume);
         return this;
     }
+
+    /**
+     * Match passed value with html element min volume
+     * @param min volume to compare
+     */
     @JDIAction("Assert that '{name}' min volume {0}")
     public HtmlAssertion minVolume(Matcher<Integer> min) {
         assertThat(getInt("min", html), min);
         return this;
     }
+
+    /**
+     * Match passed value with html element max volume
+     * @param max volume to compare
+     */
     @JDIAction("Assert that '{name}' max volume {0}")
     public HtmlAssertion maxVolume(Matcher<Integer> max) {
         assertThat(getInt("max", html), max);
         return this;
     }
+
+    /**
+     * Match passed value with html element step
+     * @param step volume to compare
+     */
     @JDIAction("Assert that '{name}' step {0}")
     public HtmlAssertion step(Matcher<Integer> step) {
         assertThat(getInt("step", html), step);
         return this;
     }
 
+    /**
+     * Match passed value with html element date value
+     * @param date volume to compare
+     */
     @JDIAction("Assert that '{name}' date {0}")
     public HtmlAssertion date(Matcher<String> date) {
         assertThat(html.value(), date);
         return this;
     }
 
+    /**
+     * Match passed value with html element month value
+     * @param month volume to compare
+     */
     @JDIAction("Assert that '{name}' month {0}")
     public HtmlAssertion month(Matcher<String> month) {
         assertThat(html.value(), month);
         return this;
     }
 
+    /**
+     * Match passed value with html element week value
+     * @param week volume to compare
+     */
     @JDIAction("Assert that '{name}' week {0}")
     public HtmlAssertion week(Matcher<String> week) {
         assertThat(html.value(), week);
         return this;
     }
+
+    /**
+     * Match passed value with html element time value
+     * @param time volume to compare
+     */
     @JDIAction("Assert that '{name}' time {0}")
     public HtmlAssertion time(Matcher<String> time) {
         assertThat(html.value(), time);
