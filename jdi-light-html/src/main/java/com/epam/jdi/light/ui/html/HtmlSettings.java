@@ -38,6 +38,9 @@ import static java.util.Arrays.asList;
 
 public class HtmlSettings {
 
+    /**
+     * Initializes default jdi classes
+     */
     public static synchronized void init() {
         if (!initialized) {
             WebSettings.init();
