@@ -137,10 +137,16 @@ public class InitActions {
             return findByToBy(field.getAnnotation(org.openqa.selenium.support.FindBy.class));
         UI[] uis = field.getAnnotationsByType(UI.class);
         if (uis.length > 0 && any(uis, j -> j.group().equals("") || j.group().equals(TEST_GROUP)))
-            return findByToBy(first(uis, j -> j.group().equals(TEST_GROUP)));
+            if (any(uis, j -> j.group().equals(TEST_GROUP)))
+                return findByToBy(first(uis, j -> j.group().equals(TEST_GROUP)));
+            else
+                return findByToBy(first(uis, j -> j.group().equals("")));
         FindBy[] jfindbys = field.getAnnotationsByType(FindBy.class);
         if (jfindbys.length > 0 && any(jfindbys, j -> j.group().equals("") || j.group().equals(TEST_GROUP)))
-            return findByToBy(first(jfindbys, j -> j.group().equals(TEST_GROUP)));
+            if (any(jfindbys, j -> j.group().equals(TEST_GROUP)))
+                return findByToBy(first(jfindbys, j -> j.group().equals(TEST_GROUP)));
+            else
+                return findByToBy(first(jfindbys, j -> j.group().equals("")));
         if (hasAnnotation(field, Css.class))
             return findByToBy(field.getAnnotation(Css.class));
         if (hasAnnotation(field, XPath.class))

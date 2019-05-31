@@ -104,6 +104,7 @@ public class WebSettings {
             // TODO fillAction(p -> asserter.doScreenshot(p), "screenshot.strategy");
             fillAction(p -> KILL_BROWSER = p, "browser.kill");
             fillAction(WebSettings::setSearchStrategy, "element.search.strategy");
+            fillAction(p -> TEST_GROUP = p, "test.group");
             fillAction(p -> BROWSER_SIZE = p, "browser.size");
             fillAction(p -> PAGE_LOAD_STRATEGY = getPageLoadStrategy(p), "page.load.strategy");
             fillAction(p -> CHECK_AFTER_OPEN = parse(p), "page.check.after.open");

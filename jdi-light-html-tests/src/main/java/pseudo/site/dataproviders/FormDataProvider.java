@@ -2,7 +2,7 @@ package pseudo.site.dataproviders;
 
 import org.testng.annotations.DataProvider;
 
-import static pseudo.site.PseudoSite.pseudoHeader;
+import static pseudo.site.PseudoSite.header;
 import static pseudo.site.sections.Header.pseudoForm;
 import static pseudo.site.sections.Header.pseudoFormSmart;
 
@@ -10,7 +10,7 @@ public class FormDataProvider {
     @DataProvider
     public Object[][] formDataProvider() {
         return new Object[][]{
-                {pseudoForm, "", pseudoHeader, "Pseudo Form"},
+                {pseudoForm, "", header, "Pseudo Form"},
 
                 {pseudoForm.getFbWebElement(), "css='#fbWebElement-id'", pseudoForm, "Fb Web Element"},
                 {pseudoForm.getFbPublicWebElement(), "css='#fbPublicWebElement-id'", pseudoForm, "Fb Public Web Element"},
@@ -77,7 +77,7 @@ public class FormDataProvider {
     @DataProvider
     public Object[][] smartFormDataProvider() {
         return new Object[][]{
-                {pseudoFormSmart, "", pseudoHeader, "Pseudo Form Smart"},
+                {pseudoFormSmart, "", header, "Pseudo Form Smart"},
 
                 {pseudoFormSmart.getFbWebElement(), "", pseudoFormSmart, "Fb Web Element"},
                 {pseudoFormSmart.getFbPublicWebElement(), "", pseudoFormSmart, "Fb Public Web Element"},

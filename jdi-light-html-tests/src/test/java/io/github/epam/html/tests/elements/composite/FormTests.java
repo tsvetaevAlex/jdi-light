@@ -32,7 +32,7 @@ import static io.github.epam.html.tests.site.steps.States.shouldContactPageBeOpe
 import static org.hamcrest.Matchers.containsString;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
-import static pseudo.site.PseudoSite.pseudoHeader;
+import static pseudo.site.PseudoSite.header;
 import static pseudo.site.sections.Header.pseudoFormLight;
 
 public class FormTests extends TestsInit {
@@ -49,7 +49,7 @@ public class FormTests extends TestsInit {
 
     @Test
     public void lightFormInitializationTest() {
-        checkInitializedElement(pseudoFormLight, "", pseudoHeader, "Pseudo Form Light");
+        checkInitializedElement(pseudoFormLight, "", header, "Pseudo Form Light");
     }
 
     @Test

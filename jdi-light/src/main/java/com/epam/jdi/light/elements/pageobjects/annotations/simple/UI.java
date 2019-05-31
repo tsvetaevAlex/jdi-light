@@ -5,13 +5,11 @@ package com.epam.jdi.light.elements.pageobjects.annotations.simple;
  * Email: roman.iovlev.jdi@gmail.com; Skype: roman.iovlev
  */
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE, ElementType.FIELD})
+@Repeatable(UIs.class)
 public @interface UI {
     String value();
     String group() default "";

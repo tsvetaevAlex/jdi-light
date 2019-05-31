@@ -4,11 +4,15 @@ import com.epam.jdi.light.elements.composite.WebPage;
 import com.epam.jdi.light.elements.pageobjects.annotations.simple.*;
 import com.epam.jdi.light.ui.html.common.Checkbox;
 import com.epam.jdi.light.ui.html.common.Label;
+import org.openqa.selenium.support.How;
 
 public class DifferentElementsPage extends WebPage {
 
     @org.openqa.selenium.support.FindBy(css = "label:nth-child(1) > input[type=checkbox]")
     public Checkbox waterSeleniumFindBy;
+
+    @org.openqa.selenium.support.FindBy(how = How.CSS, using = "label:nth-child(1) > input[type=checkbox]")
+    public Checkbox waterSeleniumFindByHowAndUsing;
 
     @com.epam.jdi.light.elements.pageobjects.annotations.FindBy(css = "label:nth-child(1) > input[type=checkbox]")
     public Checkbox waterJDIFindByCss;
@@ -70,4 +74,12 @@ public class DifferentElementsPage extends WebPage {
 
     @UI(".colors<['Water']")
     public Label waterUIMoveUp;
+
+    @com.epam.jdi.light.elements.pageobjects.annotations.FindBy(xpath = "(//*[@class='label-checkbox'])[1]", group = "QC")
+    @com.epam.jdi.light.elements.pageobjects.annotations.FindBy(xpath = "(//*[@class='label-checkbox'])[2]")
+    public Label waterJDIFindByGroupVarying;
+
+    @UI(value = "(//*[@class='label-checkbox'])[1]", group = "QC")
+    @UI("(//*[@class='label-checkbox'])[2]")
+    public Label waterUIGroupVarying;
 }
