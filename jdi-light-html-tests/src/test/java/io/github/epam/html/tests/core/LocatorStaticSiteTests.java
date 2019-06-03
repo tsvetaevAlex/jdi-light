@@ -12,6 +12,7 @@ import static com.epam.jdi.light.ui.html.PageFactory.initElements;
 import static io.github.com.StaticSite.differentElementsPage;
 import static io.github.epam.html.tests.site.steps.States.shouldBeLoggedIn;
 import static org.hamcrest.Matchers.is;
+import static org.testng.Assert.assertTrue;
 
 public class LocatorStaticSiteTests extends TestsInit {
 
@@ -23,8 +24,14 @@ public class LocatorStaticSiteTests extends TestsInit {
     }
 
     @Test
-    public void seleniumFindByLocatorTest() {
-        checkThatCheckboxIsCorrectlySelected(differentElementsPage.waterSeleniumFindBy);
+    public void seleniumFindByLocatorCheckboxTest() {
+        checkThatCheckboxIsCorrectlySelected(differentElementsPage.waterSeleniumFindByCheckbox);
+    }
+
+    @Test
+    public void seleniumFindByLocatorWebElementTest() {
+        differentElementsPage.waterSeleniumFindByWebElement.click();
+        assertTrue(differentElementsPage.waterSeleniumFindByWebElement.isSelected());
     }
 
     @Test

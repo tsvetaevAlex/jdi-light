@@ -4,12 +4,16 @@ import com.epam.jdi.light.elements.composite.WebPage;
 import com.epam.jdi.light.elements.pageobjects.annotations.simple.*;
 import com.epam.jdi.light.ui.html.common.Checkbox;
 import com.epam.jdi.light.ui.html.common.Label;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.How;
 
 public class DifferentElementsPage extends WebPage {
 
     @org.openqa.selenium.support.FindBy(css = "label:nth-child(1) > input[type=checkbox]")
-    public Checkbox waterSeleniumFindBy;
+    public Checkbox waterSeleniumFindByCheckbox;
+
+    @org.openqa.selenium.support.FindBy(css = "label:nth-child(1) > input[type=checkbox]")
+    public WebElement waterSeleniumFindByWebElement;
 
     @org.openqa.selenium.support.FindBy(how = How.CSS, using = "label:nth-child(1) > input[type=checkbox]")
     public Checkbox waterSeleniumFindByHowAndUsing;
