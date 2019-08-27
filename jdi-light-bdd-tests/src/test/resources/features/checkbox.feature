@@ -10,7 +10,7 @@ Feature: Checkbox
     When I Check "Accept Conditions"
     When I Check "Accept Conditions"
     Then the "Accept Conditions" is selected
-
+sASasAS
   Scenario: Uncheck test
     Given I open "Html5 Page"
     When I Check "Accept Conditions"
