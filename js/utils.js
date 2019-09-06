@@ -523,10 +523,15 @@ function includeSideBar() {
                     <li ui="label" index="1"><a href="html5.html">\
                         <span>HTML 5</span>\
                     </a></li>\
-                    <li ui="label" index="2"><a>\
+                    <li ui="label" index="2"><a href="bootstrap.html">\
                         <span>Bootstrap</span>\
                     </a></li>\
                 </ul>\
+            </li>\
+            <li ui="label" index="6">\
+                <a href="bootstrap_form.html">\
+                    <span>Bootstrap form</span>\
+                </a>\
             </li>\
         </ul>\
     </div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px; height: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>';

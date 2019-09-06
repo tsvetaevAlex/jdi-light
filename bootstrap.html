@@ -1,0 +1,1827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Bootstrap</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-4.3.min.css"/>
+    <link rel="stylesheet" href="css/uui-all.css"/>
+    <link rel="stylesheet" href="css/custom-styles.css"/>
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/lib/components/datepicker3.css"/>
+    <link rel="stylesheet" href="css/lib/components/jquery.mCustomScrollbar.css"/>
+    <link rel="stylesheet" href="css/lib/components/scrollspy.css"/>
+    <link rel="stylesheet" href="jquery-ui/css/smoothness/jquery-ui-1.10.4.custom.min.css"/>
+    <link rel="stylesheet" href="css/fix-bootstrap4.3.css"/>
+    <script src="js/lib/jquery-1.11.1.min.js"></script>
+    <script src="js/lib/components/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/lib/jquery.cookie.js"></script>
+    <script src="js/lib/popper.min.js"></script>
+    <script src="jquery-ui/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="bootstrap/js/bootstrap-4.3.min.js"></script>
+    <script src="js/uui-core.min.js" type="text/javascript"></script>
+    <script src="js/utils.js" type="text/javascript"></script>
+</head>
+<body>
+<header>
+    <div class="replace site-header">replace</div>
+</header>
+	<div class="wrapper">
+		<div class="replace left-side-bar">replace</div>
+		<div class="uui-main-container page-inside">
+			<main>
+			<div class="pattern-top"></div>
+			<div class="main-content">
+				<div class="main-content-hg">
+
+
+					<div class="support-title">
+						<i class="fa fa-comments-o"></i>Bootstrap Elements
+					</div>
+					<div class="doc-space line">
+						<div class="html-left">
+							<button type="button" class="btn btn-danger"
+								onclick="alert('Red button');">Red button</button>
+						</div>
+						<div class="html-right">
+							<h4>Button</h4>
+							<p>
+								Bootstrap: <a
+									href="https://getbootstrap.com/docs/4.3/components/buttons/"
+									target="_blank">https://getbootstrap.com/docs/4.3/components/buttons/</a>
+							</p>
+							<p>click() - Click on link</p>
+							<p>getText() - Get link's text</p>
+							<p>getRef() - Get link's "ref" attribute</p>
+							<p>getUrl() - Get link's "ref" attribute as URL</p>
+							<p>getAlt() - Get link's "alt" attribute</p>
+						</div>
+					</div>
+
+					<div class="doc-space line">
+						<div class="html-left">
+							<div class="btn-group" role="group"
+								aria-label="Button group with nested dropdown">
+								<button type="button" class="btn btn-danger"
+									onclick="alert('Red button');">Red button</button>
+								<button type="button" class="btn btn-success"
+									onclick="alert('Green button');">Green button</button>
+
+								<div class="btn-group" role="group">
+									<button id="btnGroupDrop1" type="button"
+										class="btn btn-secondary dropdown-toggle"
+										data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">Dropdown</button>
+									<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+										<a class="dropdown-item" href="https://github.com/jdi-testing">JDI</a>
+										<a class="dropdown-item"
+											href="https://jdi-docs.github.io/jdi-light/#jdi-light-framework">JDI
+											documentation</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="html-right">
+							<h4>Button group</h4>
+							<p>
+								Bootstrap: <a
+									href="https://getbootstrap.com/docs/4.3/components/button-group/"
+									target="_blank">https://getbootstrap.com/docs/4.3/components/button-group/</a>
+							</p>
+							<p>click() - Click on link</p>
+							<p>getText() - Get link's text</p>
+							<p>getRef() - Get link's "ref" attribute</p>
+							<p>getUrl() - Get link's "ref" attribute as URL</p>
+							<p>getAlt() - Get link's "alt" attribute</p>
+						</div>
+					</div>
+
+					<div class="doc-space line">
+						<div class="html-left">
+							<div class="alert alert-success" role="alert">
+								Alert with <a
+									href="https://jdi-testing.github.io/jdi-light/index.html"
+									class="alert-link">index page link</a>.
+							</div>
+						</div>
+						<div class="html-right">
+							<h4>Alert</h4>
+							<p>
+								Bootstrap: <a
+									href="https://getbootstrap.com/docs/4.3/components/alerts/"
+									target="_blank">https://getbootstrap.com/docs/4.3/components/alerts/</a>
+							</p>
+							<p>acceptAlert() - Accept alert</p>
+							<p>dismissAlert() - Dismiss alert</p>
+							<p>getAlertText() - Get alert text</p>
+							<p>validateAlert(Matcher text) - Validate alert by matching
+								passed value with alert text</p>
+							<p>inputAndAcceptAlert(String text) - Input the specified
+								text in the alert and accept it</p>
+						</div>
+					</div>
+
+
+					<div class="doc-space line">
+						<div class="html-left">
+							<nav aria-label="breadcrumb">
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item active" aria-current="page">Bootstrap</li>
+								</ol>
+							</nav>
+
+							<nav aria-label="breadcrumb">
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item"><a
+											href="https://jdi-testing.github.io/jdi-light/index.html" target="_blank">Home</a>
+									</li>
+									<li class="breadcrumb-item active" aria-current="page">Bootstrap</li>
+								</ol>
+							</nav>
+							<nav aria-label="breadcrumb">
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item"><a
+											href="https://jdi-testing.github.io/jdi-light/index.html" target="_blank">Home</a>
+									</li>
+									<li class="breadcrumb-item"><a
+											href="https://jdi-testing.github.io/jdi-light/html5.html" target="_blank">HTML
+										5</a></li>
+									<li class="breadcrumb-item active" aria-current="page">Bootstrap</li>
+								</ol>
+							</nav>
+						</div>
+						<div class="html-right">
+							<h4>Breadcrumb</h4>
+							<p>
+								Bootstrap: <a
+									href="https://getbootstrap.com/docs/4.3/components/breadcrumb/"
+									target="_blank">https://getbootstrap.com/docs/4.3/components/breadcrumb/</a>
+							</p>
+							Index starts at 1 <br>
+							<br> click(int index) - click on item of breadcrumb with
+							target index <br> click(String nameItem) - click on item of
+							breadcrumb with target name <br> getValues() - return ? all
+							pairs: URL and index <br> getValue(int index) - return
+							String: URL of breadcrumb's item with target index <br>
+							getTexts() - return ? all pairs: name and index <br>
+							getText(int index) - return String: name of breadcrumb's item
+							with target index <br> getCurrentPageName() - return String:
+							name of breadcrumb's item with aria-current="page"
+							</p>
+						</div>
+					</div>
+
+
+					<div class="doc-space line">
+						<div class="html-left">
+							<nav>
+								<div class="nav nav-tabs" id="nav-tab" role="tablist">
+									<a class="nav-item nav-link active" id="nav-home-tab"
+									   data-toggle="tab" href="#nav-base" role="tab"
+									   aria-controls="nav-home" aria-selected="true">Base</a>
+									<a class="nav-item nav-link" id="nav-profile-tab"
+									   data-toggle="tab" href="#nav-vertical-pills" role="tab"
+									   aria-controls="nav-profile" aria-selected="false">Vertical pills</a>
+									<a class="nav-item nav-link" id="nav-contact-tab"
+									   data-toggle="tab" href="#nav-other" role="tab"
+									   aria-controls="nav-contact" aria-selected="false">Other</a>
+								</div>
+							</nav>
+							<div class="tab-content" id="nav-tabContent">
+
+								<div class="tab-pane fade show active" id="nav-base"
+									 role="tabpanel" aria-labelledby="nav-home-tab">
+									<nav class="nav">
+										<a class="nav-link active"
+										   href="https://jdi-testing.github.io/jdi-light/bootstrap.html"
+										   target="_blank">Bootstrap</a>
+										<a class="nav-link"
+										   href="https://jdi-testing.github.io/jdi-light/index.html" target="_blank">Home</a>
+										<a class="nav-link disabled"
+										   href="https://jdi-testing.github.io/jdi-light/index.html" target="_blank"
+										   tabindex="-1" aria-disabled="true">Disabled</a>
+									</nav>
+								</div>
+
+								<div class="tab-pane fade" id="nav-vertical-pills" role="tabpanel"
+									 aria-labelledby="nav-profile-tab">
+									<ul class="nav nav-pills flex-column">
+										<li class="nav-item"><a class="nav-link active"
+																href="https://jdi-testing.github.io/jdi-light/bootstrap.html"
+																target="_blank">Bootstrap</a>
+										</li>
+										<li class="nav-item"><a class="nav-link"
+																href="https://jdi-testing.github.io/jdi-light/html5.html"
+																target="_blank">HTML
+											5</a></li>
+										<li class="nav-item"><a class="nav-link"
+																href="https://jdi-testing.github.io/jdi-light/index.html"
+																target="_blank">Home</a>
+										</li>
+										<li class="nav-item"><a class="nav-link disabled"
+																href="https://jdi-testing.github.io/jdi-light/bootstrap.html"
+																tabindex="-1" aria-disabled="true" target="_blank">Disabled</a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="tab-pane fade" id="nav-other" role="tabpanel"
+									 aria-labelledby="nav-contact-tab">
+									Classes are used throughout, so your markup can be super flexible. Use &lt;ul&gt;s like above, &lt;ol&gt; if the order of your items is important, or roll your own with a &lt;nav&gt; element.
+									<br><br>
+									<center><b>Horizontal alignment</b></center><br>
+									- Centered with .justify-content-center<br>
+									- Right-aligned with .justify-content-end<br><br>
+									<center><b>Fill and justify</b></center><br>
+									Force your .nav’s contents to extend the full available width one of two modifier classes. To proportionately fill all available space with your .nav-items, use .nav-fill.<br><br>
+									<center><b>Using dropdowns:</b><center/><br>
+										<ul class="nav nav-tabs">
+											<li class="nav-item">
+												<a class="nav-link active" href="https://getbootstrap.com/docs/4.3/components/navs/"
+												   target="_blank">Active</a>
+											</li>
+											<li class="nav-item dropdown">
+												<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="https://getbootstrap.com/docs/4.3/components/navs/"
+												   target="_blank" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+												<div class="dropdown-menu">
+													<a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/components/navs/"
+													   target="_blank">Action</a>
+													<a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/components/navs/"
+													   target="_blank">Another action</a>
+													<a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/components/navs/"
+													   target="_blank">Something else here</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/components/navs/"
+													   target="_blank">Separated link</a>
+												</div>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="https://getbootstrap.com/docs/4.3/components/navs/"
+												   target="_blank">Link</a>
+											</li>
+										</ul>
+										<br><br>
+
+								</div>
+							</div>
+						</div>
+						<div class="html-right">
+							<h4>Navs</h4>
+							<p>
+								Bootstrap: <a
+									href="https://getbootstrap.com/docs/4.3/components/navs/"
+									target="_blank">https://getbootstrap.com/docs/4.3/components/navs/</a>
+							</p>
+
+							<p>click()</p>
+							<p>getValues()</p>
+
+						</div>
+					</div>
+
+
+					<div class="doc-space line">
+						<div class="html-left">
+
+							<p>active states</p>
+
+							<nav aria-label="...">
+								<ul class="pagination pagination-sm">
+									<li class="page-item active" aria-current="page">
+     									 <span class="page-link">1
+											 <span class="sr-only">(current)</span>
+										 </span>
+									</li>
+									<li class="page-item"><a class="page-link" href="https://jdi-testing.github.io/jdi-light/index.html" target="_blank">2</a></li>
+									<li class="page-item"><a class="page-link" href="https://jdi-testing.github.io/jdi-light/html5.html" target="_blank">3</a></li>
+								</ul>
+							</nav>
+
+							<p>previous|next</p>
+
+							<nav aria-label="Page navigation example">
+								<ul class="pagination">
+									<li class="page-item"><a class="page-link" href="https://jdi-testing.github.io/jdi-light/index.html" target="_blank">Previous</a></li>
+									<li class="page-item"><a class="page-link" href="https://jdi-testing.github.io/jdi-light/index.html" target="_blank">1</a></li>
+									<li class="page-item"><a class="page-link" href="https://jdi-testing.github.io/jdi-light/html5.html" target="_blank">2</a></li>
+									<li class="page-item"><a class="page-link" href="https://jdi-testing.github.io/jdi-light/bootstrap.html" target="_blank">3</a></li>
+									<li class="page-item"><a class="page-link" href="https://jdi-testing.github.io/jdi-light/index.html" target="_blank">Next</a></li>
+								</ul>
+							</nav>
+
+							<p>icons</p>
+
+							<nav aria-label="Page navigation example">
+								<ul class="pagination">
+									<li class="page-item">
+										<a class="page-link" href="https://jdi-testing.github.io/jdi-light/index.html" aria-label="Previous" target="_blank">
+											<span aria-hidden="true">&laquo;</span>
+										</a>
+									</li>
+									<li class="page-item"><a class="page-link" href="https://jdi-testing.github.io/jdi-light/index.html" target="_blank">1</a></li>
+									<li class="page-item"><a class="page-link" href="https://jdi-testing.github.io/jdi-light/html5.html" target="_blank">2</a></li>
+									<li class="page-item"><a class="page-link" href="https://jdi-testing.github.io/jdi-light/bootstrap.html" target="_blank">3</a></li>
+									<li class="page-item">
+										<a class="page-link" href="https://jdi-testing.github.io/jdi-light/index.html" aria-label="Next" target="_blank">
+											<span aria-hidden="true">&raquo;</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+
+							<p>disabled</p>
+
+							<nav aria-label="...">
+								<ul class="pagination">
+									<li class="page-item disabled"> <a class="page-link" href="https://jdi-testing.github.io/jdi-light/index.html" tabindex="-1" aria-disabled="true" target="_blank">Previous</a> </li>
+									<li class="page-item"><a class="page-link" href="https://jdi-testing.github.io/jdi-light/index.html" target="_blank">1</a></li>
+									<li class="page-item"> <a class="page-link" href="https://jdi-testing.github.io/jdi-light/bootstrap.html" target="_blank">2</a></li>
+									<li class="page-item"><a class="page-link" href="https://jdi-testing.github.io/jdi-light/html5.html" target="_blank">3</a></li>
+									<li class="page-item"> <a class="page-link" href="https://jdi-testing.github.io/jdi-light/index.html"  target="_blank">Next</a> </li>
+								</ul>
+							</nav>
+
+
+
+						</div>
+						<div class="html-right">
+							<h4>Pagination</h4>
+							<p>
+								Bootstrap: <a
+									href="https://getbootstrap.com/docs/4.3/components/pagination/"
+									target="_blank">https://getbootstrap.com/docs/4.3/components/pagination/</a>
+							</p>
+							<p>click() - Click on page</p>
+						</div>
+					</div>
+
+
+
+
+					<div class="doc-space line">
+						<div class="html-left">
+
+							<div class="jumbotron jumbotron-fluid">
+								<div class="container">
+									<h1 class="display-4">Fluid jumbotron</h1>
+									<p class="lead">This is a modified jumbotron that occupies
+										the entire horizontal space of its parent.</p>
+								</div>
+							</div>
+
+
+							<div class="jumbotron">
+								<h1 class="display-4">Hello, world!</h1>
+								<p class="lead">This is a simple hero unit, a simple
+									jumbotron-style component for calling extra attention to
+									featured content or information.</p>
+								<hr class="my-4">
+								<p>It uses utility classes for typography and spacing to
+									space content out within the larger container.</p>
+								<a class="btn btn-primary btn-lg"
+									href="https://getbootstrap.com/docs/4.3/components/jumbotron/"
+									target="_blank" role="button">Learn more</a>
+							</div>
+						</div>
+						<div class="html-right">
+							<h4>Jumbotron</h4>
+							<p>
+								Bootstrap: <a
+									href="https://getbootstrap.com/docs/4.3/components/jumbotron/"
+									target="_blank">https://getbootstrap.com/docs/4.3/components/jumbotron/</a>
+							</p>
+							<p>click() - Click on link</p>
+
+						</div>
+					</div>
+
+
+					<div class="doc-space line">
+						<div class="html-left">
+
+							<p>
+								<a class="btn btn-primary" data-toggle="collapse"
+									href="#collapseExample" role="button" aria-expanded="false"
+									aria-controls="collapseExample"> Link </a>
+								<button class="btn btn-primary" type="button"
+									data-toggle="collapse" data-target="#collapseExample"
+									aria-expanded="false" aria-controls="collapseExample">
+									Data-target</button>
+							</p>
+							<div class="collapse" id="collapseExample">
+								<div class="card card-body" style="margin-bottom: 16px;">
+									Anim pariatur cliche reprehenderit.</div>
+							</div>
+
+							<p>
+								<a class="btn btn-primary" data-toggle="collapse"
+									href="#multiCollapseExample1" role="button"
+									aria-expanded="false" aria-controls="multiCollapseExample1"
+									style="margin-bottom: 5px;">Toggle first element </a>
+								<button class="btn btn-primary" type="button"
+									data-toggle="collapse" data-target="#multiCollapseExample2"
+									aria-expanded="false" aria-controls="multiCollapseExample2"
+									style="margin-bottom: 5px;">Toggle second element</button>
+								<button class="btn btn-primary" type="button"
+									data-toggle="collapse" data-target=".multi-collapse"
+									aria-expanded="false"
+									aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle
+									both elements</button>
+							</p>
+							<div class="row">
+								<div class="col">
+									<div class="collapse multi-collapse" id="multiCollapseExample1">
+										<div class="card card-body" style="margin-bottom: 16px;">
+											Craft beer labore wes anderson cred nesciunt sapiente ea
+											proident.</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="collapse multi-collapse" id="multiCollapseExample2">
+										<div class="card card-body" style="margin-bottom: 16px;">
+											High life accusamus terry richardson ad squid. Nihil anim.</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="accordion" id="accordionExample">
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<h2 class="mb-0">
+											<button class="btn btn-link" type="button"
+												data-toggle="collapse" data-target="#collapseOne"
+												aria-expanded="true" aria-controls="collapseOne">
+												Collapsible Group Item #1</button>
+										</h2>
+									</div>
+
+									<div id="collapseOne" class="collapse show"
+										aria-labelledby="headingOne" data-parent="#accordionExample">
+										<div class="card-body">You probably haven't heard of
+											them accusamus labore sustainable VHS.</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="headingTwo">
+										<h2 class="mb-0">
+											<button class="btn btn-link collapsed" type="button"
+												data-toggle="collapse" data-target="#collapseTwo"
+												aria-expanded="false" aria-controls="collapseTwo">
+												Collapsible Group Item #2</button>
+										</h2>
+									</div>
+									<div id="collapseTwo" class="collapse"
+										aria-labelledby="headingTwo" data-parent="#accordionExample">
+										<div class="card-body">Nihil anim keffiyeh helvetica,
+											craft beer labore.</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="headingThree">
+										<h2 class="mb-0">
+											<button class="btn btn-link collapsed" type="button"
+												data-toggle="collapse" data-target="#collapseThree"
+												aria-expanded="false" aria-controls="collapseThree">
+												Collapsible Group Item #3</button>
+										</h2>
+									</div>
+									<div id="collapseThree" class="collapse"
+										aria-labelledby="headingThree" data-parent="#accordionExample">
+										<div class="card-body">3 wolf moon officia aute, non
+											cupidatat skateboard dolor brunch.</div>
+
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+						<div class="html-right">
+							<h4>Collapse</h4>
+							<p>
+								Bootstrap: <a
+									href="https://getbootstrap.com/docs/4.3/components/collapse/"
+									target="_blank">https://getbootstrap.com/docs/4.3/components/collapse/</a>
+							</p>
+							<ul>
+								<li>for all
+									<ul>
+										<li>click(String nameItem) - click on item of collapse
+											with target name</li>
+										<li>getText(String nameItem) - return String: text
+											content of collapse's item with target name</li>
+										<li>getURL(String nameItem) - return String: URL of
+											collapse's link item with target name</li>
+										<li>getName() - return String: inscription of collapse's
+											item</li>
+										<li>getShowed() - return String: name of collapse's item
+											that content is showed</li>
+									</ul>
+								</li>
+								<br>
+								<li>for Group only
+									<ul>
+										<li>getNames() - return List&lt;String&gt;: list of items
+											inscription</li>
+										<li>getTexts() - return List&lt;String&gt;: list of items
+											text content</li>
+									</ul>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+
+
+					<div class="doc-space line">
+						<div class="html-left">
+							<div class="dropdown">
+								<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-bottom: 5px;">
+									Dropdown
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+									<a class="dropdown-item" href="https://getbootstrap.com/" target="_blank">Action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Another action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" target="_blank">Separated link</a>
+								</div>
+							</div>
+							<div class="dropdown show">
+								<a class="btn btn-primary dropdown-toggle" href="https://getbootstrap.com/" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-bottom: 5px;">
+									Dropdown link
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Another action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" target="_blank">Something else here</a>
+								</div>
+							</div>
+							<!-- Example split danger button -->
+							<div class="btn-group">
+								<button type="button" class="btn btn-primary" style="margin-bottom: 5px;">Action</button>
+								<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-bottom: 5px;">
+									<span class="sr-only">Toggle Dropdown</span>
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Another action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" target="_blank">Something else here</a>
+								</div>
+							</div>
+							<br>
+							<!-- Large button groups (default and split) -->
+							<div class="btn-group">
+								<button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-bottom: 5px;">
+									Large button
+								</button>
+								<div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 48px, 0px); top: 0px; left: 0px; will-change: transform;">
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Another action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" target="_blank">Something else here</a>
+								</div>
+							</div>
+							<div class="btn-group">
+								<button class="btn btn-primary btn-lg" type="button" style="margin-bottom: 5px;">
+									Large split button
+								</button>
+								<button type="button" class="btn btn-lg btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-bottom: 5px;">
+									<span class="sr-only">Toggle Dropdown</span>
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Another action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" target="_blank">Something else here</a>
+								</div>
+							</div>
+							<!-- Small button groups (default and split) -->
+							<div class="btn-group">
+								<button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-bottom: 5px;">
+									Small button
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Another action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" target="_blank">Something else here</a>
+								</div>
+							</div>
+							<div class="btn-group">
+								<button class="btn btn-primary btn-sm" type="button" style="margin-bottom: 5px;">
+									Small split button
+								</button>
+								<button type="button" class="btn btn-sm btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-bottom: 5px;">
+									<span class="sr-only">Toggle Dropdown</span>
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Another action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" target="_blank">Something else here</a>
+								</div>
+							</div>
+							<!-- Default dropup button -->
+							<div class="btn-group dropup">
+								<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-bottom: 5px;">
+									Dropup
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Another action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" target="_blank">Something else here</a>
+								</div>
+							</div>
+							<!-- Split dropup button -->
+							<div class="btn-group dropup">
+								<button type="button" class="btn btn-primary" style="margin-bottom: 5px;">
+									Split dropup
+								</button>
+								<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-bottom: 5px;">
+									<span class="sr-only">Toggle Dropdown</span>
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Another action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" target="_blank">Something else here</a>
+								</div>
+							</div>
+							<!-- Default dropright button -->
+							<div class="btn-group dropright">
+								<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-bottom: 5px;">
+									Dropright
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Another action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" target="_blank">Something else here</a>
+								</div>
+							</div>
+							<!-- Split dropright button -->
+							<div class="btn-group dropright">
+								<button type="button" class="btn btn-primary" style="margin-bottom: 5px;">
+									Split dropright
+								</button>
+								<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-bottom: 5px;">
+									<span class="sr-only">Toggle Dropright</span>
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Another action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" target="_blank">Something else here</a>
+								</div>
+							</div>
+							<!-- Default dropleft button -->
+							<div class="btn-group dropleft">
+								<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-bottom: 5px;">
+									Dropleft
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Another action</a>
+									<a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" target="_blank">Something else here</a>
+								</div>
+							</div>
+							<!-- Split dropleft button -->
+							<div class="btn-group">
+								<div class="btn-group dropleft" role="group">
+									<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-bottom: 5px;">
+										<span class="sr-only">Toggle Dropleft</span>
+									</button>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Action</a>
+										<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Another action</a>
+										<a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" target="_blank">Something else here</a>
+									</div>
+								</div>
+								<button type="button" class="btn btn-primary" style="margin-bottom: 5px;">
+									Split dropleft
+								</button>
+							</div>
+							<div class="dropdown">
+								<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-bottom: 5px;">
+									Menu items
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+									<button class="dropdown-item" type="button" onclick="alert('Action');">Action</button>
+									<button class="dropdown-item" type="button" onclick="alert('Another action');">Another action</button>
+									<button class="dropdown-item" type="button" onclick="alert('One more action');">Something else here</button>
+								</div>
+							</div>
+							<div class="btn-group">
+								<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-bottom: 5px;">
+									Right-aligned menu example
+								</button>
+								<div class="dropdown-menu dropdown-menu-right">
+									<button class="dropdown-item" type="button" onclick="alert('Action');">Action</button>
+									<button class="dropdown-item" type="button" onclick="alert('Another action');">Another action</button>
+									<button class="dropdown-item" type="button" onclick="alert('One more action');">Something else here</button>
+								</div>
+							</div>
+							<div class="btn-group">
+								<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" style="margin-bottom: 5px;">
+									Left-aligned but right aligned when large screen
+								</button>
+								<div class="dropdown-menu dropdown-menu-lg-right">
+									<button class="dropdown-item" type="button" onclick="alert('Action');">Action</button>
+									<button class="dropdown-item" type="button" onclick="alert('Another action');">Another action</button>
+									<button class="dropdown-item" type="button" onclick="alert('One more action');">Something else here</button>
+								</div>
+							</div>
+							<div class="btn-group">
+								<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" style="margin-bottom: 5px;">
+									Right-aligned but left aligned when large screen
+								</button>
+								<div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+									<button class="dropdown-item" type="button" onclick="alert('Action');">Action</button>
+									<button class="dropdown-item" type="button" onclick="alert('Another action');">Another action</button>
+									<button class="dropdown-item" type="button" onclick="alert('One more action');">Something else here</button>
+								</div>
+							</div>
+							<div class="dropdown-menu dropdown-static">
+								<span class="dropdown-item-text">Dropdown item text</span>
+								<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/">Action</a>
+								<a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/">Another action</a>
+							</div>
+							<div class="dropdown-menu dropdown-static">
+								<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Action</a>
+								<a class="dropdown-item active" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Another action</a>
+								<a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" target="_blank">Something else here</a>
+							</div>
+							<div class="dropdown-menu dropdown-static">
+								<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Regular link</a>
+								<a class="dropdown-item disabled" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Disabled link</a>
+								<a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" target="_blank">Another link</a>
+							</div>
+							<div class="dropdown-menu dropdown-static">
+								<h6 class="dropdown-header">Dropdown header</h6>
+								<a class="dropdown-item" href="https://getbootstrap.com/" target="_blank">Action</a>
+								<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Another action</a>
+							</div>
+							<div class="dropdown-menu dropdown-static">
+								<a class="dropdown-item" href="https://getbootstrap.com/" target="_blank">Action</a>
+								<a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/components/dropdowns/" target="_blank">Another action</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" target="_blank">Separated link</a>
+							</div>
+							<div class="dropdown-menu dropdown-static p-4 text-muted" style="max-width: 200px;">
+								<p>
+									Some example text that's free-flowing within the dropdown menu.
+								</p>
+								<p class="mb-0">
+									And this is more example text.
+								</p>
+							</div>
+						</div>
+
+						<div class="html-right">
+							<h4>Dropdown</h4>
+							<p>
+								Bootstrap: <a
+									href="https://getbootstrap.com/docs/4.3/components/dropdowns/"
+									target="_blank">https://getbootstrap.com/docs/4.3/components/dropdowns/</a>
+							</p>
+							<p>getValue()/getText()/getSelected() - Return selected
+								dropdown value</p>
+							<p>selected(String option) - Check if option has been
+								selected</p>
+							<p>isExpanded() - Show that dropdown element expanded</p>
+							<p>isDisplayed() - Show\wait that dropdown element displayed
+								on the screen</p>
+							<p>expand() - Expand dropdown list</p>
+							<p>close() - Close expanded before dropdown list</p>
+							<p>size() - Return amount of elements in the list</p>
+							<p>setup(Field field) - Setup the dropdown using specified
+								fields</p>
+							<p>sendKeys(CharSequence... charSequence) - Send specific
+								keys</p>
+						</div>
+					</div>
+
+					<div class="doc-space line">
+						<div class="html-left">
+							<div class="input-group flex-nowrap">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="addon-wrapping">@</span>
+								</div>
+								<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+							</div>
+						</div>
+						<div class="html-right">
+							<h4>Wrapping(Input group)</h4>
+							<p>Bootstrap: <a href="https://getbootstrap.com/docs/4.3/components/input-group/"
+											 target="_blank">https://getbootstrap.com/docs/4.3/components/input-group/</a>
+							</p>
+							<p>getValue()/getText()/getSelected() - Return value from selected input field</p>
+							<p>isDisplayed() - Show\wait that input field element displayed on the screen</p>
+							<p>sendKeys(CharSequence... charSequence) - Set specific keys to input field</p>
+						</div>
+					</div>
+
+					<div class="doc-space line">
+						<div class="html-left">
+						<div class="input-group input-group-sm mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+							</div>
+							<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+						</div>
+
+						<div class="input-group mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+							</div>
+							<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						</div>
+
+						<div class="input-group input-group-lg">
+							<div class="input-group-prepend">
+								<span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+							</div>
+							<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+						</div>
+						</div>
+						<div class="html-right">
+							<h4>Sizing(Input group)</h4>
+							<p>Bootstrap: <a href="https://getbootstrap.com/docs/4.3/components/input-group/"
+											 target="_blank">https://getbootstrap.com/docs/4.3/components/input-group/</a>
+							</p>
+							<p>getValue()/getText()/getSelected() - Return value from selected input field</p>
+							<p>isDisplayed() - Show\wait that input field element displayed on the screen</p>
+							<p>sendKeys(CharSequence... charSequence) - Set specific keys to input field</p>
+						</div>
+					</div>
+
+					<div class="doc-space line">
+						<div class="html-left">
+						<div class="input-group mb-3">
+							<div class="input-group-prepend">
+								<div class="input-group-text">
+									<input type="checkbox" aria-label="Checkbox for following text input">
+								</div>
+							</div>
+							<input type="text" class="form-control" aria-label="Text input with checkbox">
+						</div>
+
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<div class="input-group-text">
+									<input type="radio" aria-label="Radio button for following text input">
+								</div>
+							</div>
+							<input type="text" class="form-control" aria-label="Text input with radio button">
+						</div>
+						</div>
+						<div class="html-right">
+							<h4>Checkboxes and radios(Input group)</h4>
+							<p>Bootstrap: <a href="https://getbootstrap.com/docs/4.3/components/input-group/"
+											 target="_blank">https://getbootstrap.com/docs/4.3/components/input-group/</a>
+							</p>
+							<p>getValue()/getText()/getSelected() - Return value from selected input field</p>
+							<p>isDisplayed() - Show\wait that input field element displayed on the screen</p>
+							<p>sendKeys(CharSequence... charSequence) - Set specific keys to input field</p>
+							<p>selected(String option) - Check if option has been selected</p>
+						</div>
+					</div>
+
+					<div class="doc-space line" />
+					<div class="html-left">
+						<h5>
+							Heading <span class="badge badge-secondary">Badge</span>
+						</h5>
+					</div>
+					<div class="html-right">
+						<h4>Badge</h4>
+						<p>
+							Bootstrap: <a
+								href="https://getbootstrap.com/docs/4.3/components/badge/"
+								target="_blank">https://getbootstrap.com/docs/4.3/components/badge/</a>
+						</p>
+						<p>GetText() - returns text</p>
+						<p>GetValue() - returns text</p>
+						<p>Is - Gets text assert</p>
+						<p>AssertThat - Gets text assert</p>
+						<p>WaitFor - Gets text assert</p>
+					</div>
+
+					<div class="doc-space line" />
+					<div class="html-left">
+						<button type="button" class="btn btn-primary"
+							onclick="alert('Button with badge');">
+							Profile <span class="badge badge-light">9</span> <span
+								class="sr-only">unread messages</span>
+						</button>
+					</div>
+					<div class="html-right">
+						<h4>Badge as part of button</h4>
+						<p>
+							Bootstrap: <a
+								href="https://getbootstrap.com/docs/4.3/components/badge/"
+								target="_blank">https://getbootstrap.com/docs/4.3/components/badge/</a>
+						</p>
+						<p>click() - Click the button</p>
+						<p>getText() - Get button text</p>
+						<p>is() - Assert action</p>
+						<p>assertThat() - Assert action</p>
+					</div>
+
+					<div class="doc-space line" />
+					<div class="html-left">
+						<a href="https://github.com/jdi-testing" style="font-size: 16px;"
+							class="badge badge-success" alt="Github JDI Link">Github JDI</a>
+					</div>
+					<div class="html-right">
+						<h4>Badge as part of link</h4>
+						<p>
+							Bootstrap: <a
+								href="https://getbootstrap.com/docs/4.3/components/badge/"
+								target="_blank">https://getbootstrap.com/docs/4.3/components/badge/</a>
+						</p>
+						<p>click() - Follow the link</p>
+						<p>getText() - Returns the link text</p>
+						<p>ref() - Returns the reference</p>
+						<p>url() - Returns the URL</p>
+						<p>alt() - Returns the alternate text</p>
+						<p>is() - Returns object for work with assertions</p>
+						<p>assertThat() - Returns object for work with assertions</p>
+					</div>
+
+					<div class="doc-space line">
+						<div class="html-left">
+							<div id="carouselExampleSlidesOnly" class="carousel slide"
+								data-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img src="images/wolverin.jpg" class="d-block w-100"
+											alt="wolverin">
+									</div>
+									<div class="carousel-item active">
+										<img src="images/spider-man.jpg" class="d-block w-100"
+											alt="spider-man">
+									</div>
+									<div class="carousel-item">
+										<img src="images/punisher.jpg" class="d-block w-100"
+											alt="punisher">
+									</div>
+								</div>
+							</div>
+							<div id="carouselExampleIndicators" class="carousel slide"
+								data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#carouselExampleIndicators" data-slide-to="0"
+										class=""></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="1"
+										class="active"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="2"
+										class=""></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="carousel-item">
+										<img src="images/wolverin.jpg" class="d-block w-100"
+											alt="wolverin">
+									</div>
+									<div class="carousel-item active">
+										<img src="images/spider-man.jpg" class="d-block w-100"
+											alt="spider-man">
+									</div>
+									<div class="carousel-item">
+										<img src="images/punisher.jpg" class="d-block w-100"
+											alt="punisher">
+									</div>
+								</div>
+								<a class="carousel-control-prev"
+									href="#carouselExampleIndicators" role="button"
+									data-slide="prev"> <span class="carousel-control-prev-icon"
+									aria-hidden="true"></span> <span class="sr-only">Previous</span>
+								</a> <a class="carousel-control-next"
+									href="#carouselExampleIndicators" role="button"
+									data-slide="next"> <span class="carousel-control-next-icon"
+									aria-hidden="true"></span> <span class="sr-only">Next</span>
+								</a>
+								<style>
+.carousel-control-prev-icon {
+	background-image:
+		url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+	background-image:
+		url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel .carousel-item {
+	height: 210px;
+}
+
+.item img {
+	position: absolute;
+	object-fit: cover;
+	top: 0;
+	left: 50;
+	min-height: 500px;
+}
+</style>
+							</div>
+							<div class="bd-example">
+								<div id="carouselExampleCaptions" class="carousel slide"
+									data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#carouselExampleCaptions" data-slide-to="0"
+											class="active"></li>
+										<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+										<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+									</ol>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img src="images/wolverin.jpg" class="d-block w-100"
+												alt="...">
+											<div class="carousel-caption d-none d-md-block">
+												<h5>First slide label</h5>
+												<p>Nulla vitae elit libero, a pharetra augue mollis
+													interdum.</p>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img src="images/spider-man.jpg" class="d-block w-100"
+												alt="...">
+											<div class="carousel-caption d-none d-md-block">
+												<h5>Second slide label</h5>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+													elit.</p>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<img src="images/punisher.jpg" class="d-block w-100"
+												alt="...">
+											<div class="carousel-caption d-none d-md-block">
+												<h5>Third slide label</h5>
+												<p>Praesent commodo cursus magna, vel scelerisque nisl
+													consectetur.</p>
+											</div>
+										</div>
+									</div>
+									<a class="carousel-control-prev"
+										href="#carouselExampleCaptions" role="button"
+										data-slide="prev"> <span
+										class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a> <a class="carousel-control-next"
+										href="#carouselExampleCaptions" role="button"
+										data-slide="next"> <span
+										class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+									<style>
+.carousel-control-prev-icon {
+	background-image:
+		url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+	background-image:
+		url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel .carousel-item {
+	height: 210px;
+}
+
+.item img {
+	position: absolute;
+	object-fit: cover;
+	top: 0;
+	left: 50;
+	min-height: 500px;
+}
+</style>
+								</div>
+							</div>
+						</div>
+						<div class="html-right">
+							<h4>Carousel</h4>
+							<p>
+								Bootstrap: <a
+									href="https://getbootstrap.com/docs/4.3/components/carousel/"
+									target="_blank">https://getbootstrap.com/docs/4.3/components/carousel/</a>
+							</p>
+							<p>prev() - Goes to the previous item</p>
+							<p>next() - Goes to the next item</p>
+						</div>
+					</div>
+
+					<!-- CARD BEGINNING -->
+					<div class="doc-space line">
+						<div class="html-left">
+							<div class="card mb-3" style="width: 18rem;">
+								<img style="width: 30%; margin: 0 auto;" src="https://jdi-testing.github.io/jdi-light/images/wolverin.jpg" class="card-img-top" alt="image">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<a href="#" class="btn btn-primary" onclick="alert('Card Button Clicked!')">Go somewhere</a>
+								</div>
+							</div>
+						</div>
+						<div class="html-right">
+							<h4>Card</h4>
+							<p>
+								Bootstrap: <a href="https://getbootstrap.com/docs/4.3/components/card/#example" target="_blank">https://getbootstrap.com/docs/4.3/components/card/#example</a>
+							</p>
+							<p>click() - follow card link</p>
+							<p>getText() - return text</p>
+							<p>is() - assert text</p>
+							<p>assertThat() - assert image / text presence</p>
+							<p>alt() - get value of the image alt attribute</p>
+							<p>url() - return button url</p>
+						</div>
+					</div>
+
+					<div class="doc-space line">
+						<div class="html-left">
+							<div class="card">
+								<div class="card-body">
+									This is some text within a card body.
+								</div>
+							</div>
+						</div>
+						<div class="html-right">
+							<h4>Card Body</h4>
+							<p>
+								Bootstrap: <a
+									href="https://getbootstrap.com/docs/4.3/components/card/#body"
+									target="_blank">https://getbootstrap.com/docs/4.3/components/card/#body</a>
+							</p>
+							<p>getText() - returns text</p>
+							<p>is() - asserts text</p>
+							<p>assertThat() - assert text presence</p>
+						</div>
+					</div>
+
+					<div class="doc-space line">
+						<div class="html-left">
+							<div class="card" style="width: 18rem;">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+									<p class="card-text">Some quick example text to build on the card title and
+										make up the bulk of the card's content.</p>
+									<a href="https://github.com/jdi-testing/jdi-light"
+									   target="_blank" class="card-link">JDI Light Github</a>
+									<a href="https://jdi-testing.github.io/jdi-light/index.html"
+									   target="_blank" class="card-link">JDI Website</a>
+								</div>
+							</div>
+						</div>
+						<div class="html-right">
+							<h4>Card with subtitle and links</h4>
+							<p>
+								Bootstrap: <a
+									href="https://getbootstrap.com/docs/4.3/components/card/#titles-text-and-links"
+									target="_blank">https://getbootstrap.com/docs/4.3/components/
+								card/#titles-text-and-links</a>
+							</p>
+							<p>click() - follow card link</p>
+							<p>getText() - return text</p>
+							<p>is() - assert text</p>
+							<p>assertThat() - assert text presence</p>
+							<p>url() - return link url</p>
+						</div>
+					</div>
+
+
+
+                    <div class="doc-space line">
+                        <div class="html-left">
+
+                            <div class="card-group" style="margin-bottom: 10px;">
+                                <div class="card">
+                                    <p style="text-align: center;"><img src="images/spider-man.jpg" class="card-img-top" alt="spider-man" style="width: 75px; height: 120px;">  </p>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Spider man</h5>
+                                        <p class="card-text">Spider-Man is a fictional superhero created by writer-editor Stan Lee and writer-artist Steve Ditko.</p>
+                                        <p class="card-text"><small class="text-muted">Peter Parker</small></p>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+									<p style="text-align: center;"><img src="images/hulk.jpg" class="card-img-top" alt="hulk" style="width: 98px; height: 120px;"> </p>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hulk</h5>
+                                        <p class="card-text">The Hulk is a fictional superhero appearing in publications by the American publisher Marvel Comics.</p>
+                                        <p class="card-text"><small class="text-muted">Bruce Banner</small></p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card-group" style="margin-bottom: 10px;">
+                                <div class="card">
+									<p style="text-align: center;"><img src="images/spider-man.jpg" class="card-img-top" alt="spider-man" style="width: 75px; height: 120px;">  </p>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Spider man</h5>
+                                        <p class="card-text">Spider-Man is a fictional superhero created by writer-editor Stan Lee and writer-artist Steve Ditko.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Peter Parker</small>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+									<p style="text-align: center;"><img src="images/hulk.jpg" class="card-img-top" alt="hulk" style="width: 98px; height: 120px;"> </p>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hulk</h5>
+                                        <p class="card-text">The Hulk is a fictional superhero appearing in publications by the American publisher Marvel Comics.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Bruce Banner</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="html-right">
+                            <h4>Card groups</h4>
+                            <p>
+                                Bootstrap: <a
+                                    href="https://getbootstrap.com/docs/4.3/components/card/#card-groups"
+                                    target="_blank">https://getbootstrap.com/docs/4.3/components/card/#card-groups</a>
+                            </p>
+                            <p>click() - follow card link</p>
+                            <p>getText() - return text</p>
+                            <p>is() - assert text</p>
+                            <p>assertThat() - assert text presence</p>
+                            <p>url() - return link url</p>
+                        </div>
+                    </div>
+
+
+
+					<div class="doc-space line">
+						<div class="html-left">
+								<div class="card-deck" style="margin-bottom: 10px;">
+									<div class="card">
+										<p style="text-align: center;"><img src="images/spider-man.jpg" class="card-img-top" alt="spider-man" style="width: 75px; height: 120px;">  </p>
+										<div class="card-body">
+											<h5 class="card-title">Spider man</h5>
+											<p class="card-text">Spider-Man is a fictional superhero created by writer-editor Stan Lee and writer-artist Steve Ditko.</p>
+											<p class="card-text"><small class="text-muted">Peter Parker</small></p>
+										</div>
+									</div>
+
+									<div class="card">
+										<p style="text-align: center;"><img src="images/hulk.jpg" class="card-img-top" alt="hulk" style="width: 98px; height: 120px;"> </p>
+										<div class="card-body">
+											<h5 class="card-title">Hulk</h5>
+											<p class="card-text">The Hulk is a fictional superhero appearing in publications by the American publisher Marvel Comics.</p>
+											<p class="card-text"><small class="text-muted">Bruce Banner</small></p>
+										</div>
+									</div>
+								</div>
+
+								<div class="card-deck" style="margin-bottom: 10px;">
+									<div class="card">
+										<p style="text-align: center;"><img src="images/spider-man.jpg" class="card-img-top" alt="spider-man" style="width: 75px; height: 120px;">  </p>
+										<div class="card-body">
+											<h5 class="card-title">Spider man</h5>
+											<p class="card-text">Spider-Man is a fictional superhero created by writer-editor Stan Lee and writer-artist Steve Ditko.</p>
+										</div>
+										<div class="card-footer">
+											<small class="text-muted">Peter Parker</small>
+										</div>
+									</div>
+
+									<div class="card">
+										<p style="text-align: center;"><img src="images/hulk.jpg" class="card-img-top" alt="hulk" style="width: 98px; height: 120px;"> </p>
+										<div class="card-body">
+											<h5 class="card-title">Hulk</h5>
+											<p class="card-text">The Hulk is a fictional superhero appearing in publications by the American publisher Marvel Comics.</p>
+										</div>
+										<div class="card-footer">
+											<small class="text-muted">Bruce Banner</small>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						<div class="html-right">
+							<h4>Card desk</h4>
+							<p>
+								Bootstrap: <a
+									href="https://getbootstrap.com/docs/4.3/components/card/#card-decks"
+									target="_blank">https://getbootstrap.com/docs/4.3/components/card/#card-decks</a>
+							</p>
+							<p>click() - follow card link</p>
+							<p>getText() - return text</p>
+							<p>is() - assert text</p>
+							<p>assertThat() - assert text presence</p>
+							<p>url() - return link url</p>
+						</div>
+					</div>
+
+
+					<div class="doc-space line">
+						<div class="html-left">
+
+							<div class="card border-success mb-3" style="max-width: 18rem;">
+								<div class="card-header bg-transparent border-success">Header</div>
+								<div class="card-body text-success">
+									<h5 class="card-title">Success card title</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								</div>
+								<div class="card-footer bg-transparent border-success">Footer</div>
+							</div>
+
+						</div>
+						<div class="html-right">
+							<h4>Card mixins utilities</h4>
+							<p>
+								Bootstrap: <a
+									href="https://getbootstrap.com/docs/4.3/components/media-object/"
+									target="_blank">https://getbootstrap.com/docs/4.3/components/media-object/</a>
+							</p>
+							<p>getText() - Get current value</p>
+							<p>is() - Various assert actions for Text</p>
+							<p>assertThat() - Various assert actions for Text</p>
+						</div>
+					</div>
+					<!-- CARD END -->
+
+
+					<div class="doc-space line">
+						<div class="html-left">
+							<div class="list-group">
+								<button type="button" class="btn btn-danger"
+									onclick="alert('Red button');">Red button</button>
+								<a href="https://github.com/jdi-testing" target="_blank"
+									class="list-group-item list-group-item-info">JDI - testing
+									tool</a>
+								<button type="button" class="btn btn-light"
+									onclick="alert('Button with badge');">
+									Profile <span class="badge badge-primary badge-pill">9</span> <span
+										class="sr-only">unread messages</span>
+								</button>
+								<a href="https://jdi-testing.github.io/jdi-light/index.html" target="_blank"
+									class="btn btn-primary btn-lg active" role="button"
+									aria-pressed="true">JDI website</a>
+								<button type="button"
+									class="list-group-item list-group-item-action" disabled>JDI</button>
+							</div>
+						</div>
+						<div class="html-right">
+							<h4>List group</h4>
+							<p>
+								Bootstrap: <a
+									href="https://getbootstrap.com/docs/4.3/components/list-group/"
+									target="_blank">https://getbootstrap.com/docs/4.3/components/list-group/</a>
+							</p>
+							<p>click() - Click on link</p>
+							<p>getText() - Get link's text</p>
+							<p>getRef() - Get link's "ref" attribute</p>
+							<p>getUrl() - Get link's "ref" attribute as URL</p>
+							<p>getAlt() - Get link's "alt" attribute</p>
+						</div>
+					</div>
+
+					<!-- MEDIA BEGINNING -->
+
+					<div class="doc-space line">
+                        <div class="html-left">
+                            <div class="media">
+                                <img src="images/wolverin.jpg" class="mr-3" alt="...">
+                                <div class="media-body">
+                                    <h5 class="mt-0">Media heading</h5>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="html-right">
+                            <h4>Media object sample</h4>
+                            <p>
+                                Bootstrap: <a
+                                    href="https://getbootstrap.com/docs/4.3/components/media-object/"
+                                    target="_blank">https://getbootstrap.com/docs/4.3/components/media-object/</a>
+                            </p>
+							<p>getText() - Get current value</p>
+							<p>is() - Various assert actions for Text</p>
+							<p>assertThat() - Various assert actions for Text</p>
+						</div>
+                    </div>
+
+                    <div class="doc-space line" style="border-color:#ccc">
+                        <div class="html-left">
+                            <div class="media">
+                                <img src="images/wolverin.jpg" class="mr-3" alt="...">
+                                <div class="media-body">
+                                    <h5 class="mt-0">Media heading</h5>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                                    <div class="media mt-3">
+                                        <a class="mr-3" href="https://jdi-testing.github.io/jdi-light/index.html" target="_blank">
+                                            <img src="images/punisher.jpg" class="mr-3" alt="...">
+                                        </a>
+                                        <div class="media-body">
+                                            <h5 class="mt-0">Media heading</h5>
+                                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</p>
+                                            <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="html-right">
+                            <h4>Media object: nesting</h4>
+                            <p>
+                                Bootstrap: <a
+                                    href="https://getbootstrap.com/docs/4.3/components/media-object/"
+                                    target="_blank">https://getbootstrap.com/docs/4.3/components/media-object/</a>
+                            </p>
+							<p>getText() - Get current value</p>
+							<p>is() - Various assert actions for Text</p>
+							<p>assertThat() - Various assert actions for Text</p>
+							<p>click() - Follow the link</p>
+							<p>ref() - Returns the reference</p>
+							<p>url() - Returns the URL	URL</p>
+							<p>alt() - Returns the alternate text</p>
+						</div>
+                    </div>
+
+					<div class="doc-space line" style="border-color:#ccc">
+						<div class="html-left">
+                            <ul class="list-unstyled">
+                                <li class="media">
+                                    <img src="images/wolverin.jpg" class="mr-3" alt="...">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-1">List-based media object</h5>
+                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                                    </div>
+                                </li>
+                                <li class="media my-4">
+                                    <img src="images/punisher.jpg" class="mr-3" alt="...">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-1">List-based media object</h5>
+                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <img src="images/spider-man.jpg" class="mr-3" alt="...">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-1">List-based media object</h5>
+                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                                    </div>
+                                </li>
+                            </ul>						</div>
+						<div class="html-right">
+							<h4>Media object: list</h4>
+							<p>
+								Bootstrap: <a
+									href="https://getbootstrap.com/docs/4.3/components/media-object/"
+									target="_blank">https://getbootstrap.com/docs/4.3/components/media-object/</a>
+							</p>
+							<p>getText() - Get current value</p>
+							<p>is() - Various assert actions for Text</p>
+							<p>assertThat() - Various assert actions for Text</p>
+						</div>
+					</div>
+
+					<!-- MEDIA END -->
+
+					<div class="doc-space line">
+						<div class="html-left">
+							<nav id="navbar-example2" class="navbar navbar-light bg-light">
+								<a class="navbar-brand" href="#">Navbar</a>
+								<ul class="nav nav-pills">
+									<li class="nav-item"><a class="nav-link" href="#fat">@fat</a>
+									</li>
+									<li class="nav-item"><a class="nav-link" href="#mdo">@mdo</a>
+									</li>
+									<li class="nav-item dropdown"><a
+										class="nav-link dropdown-toggle" data-toggle="dropdown"
+										href="#" role="button" aria-haspopup="true"
+										aria-expanded="false">Dropdown</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="#one">one</a> <a
+												class="dropdown-item" href="#two">two</a>
+											<div role="separator" class="dropdown-divider"></div>
+											<a class="dropdown-item" href="#three">three</a>
+										</div></li>
+								</ul>
+							</nav>
+							<div data-spy="scroll" data-target="#navbar-example2"
+								data-offset="0" class="scrollspy-example">
+								<h4 id="fat">@fat</h4>
+								<p>Ad leggings keytar, brunch id art party dolor labore.
+									Pitchfork yr enim lo-fi before they sold out qui. Tumblr
+									farm-to-table bicycle rights whatever. Anim keffiyeh carles
+									cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon
+									irure. Cosby sweater lomo jean shorts, williamsburg hoodie
+									minim qui you probably haven't heard of them et cardigan trust
+									fund culpa biodiesel wes anderson aesthetic. Nihil tattooed
+									accusamus, cred irony biodiesel keffiyeh artisan ullamco
+									consequat.</p>
+								<h4 id="mdo">@mdo</h4>
+								<p>Veniam marfa mustache skateboard, adipisicing fugiat
+									velit pitchfork beard. Freegan beard aliqua cupidatat
+									mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla
+									carles. Tattooed cosby sweater food truck, mcsweeney's quis non
+									freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non
+									aesthetic exercitation quis gentrify. Brooklyn adipisicing
+									craft beer vice keytar deserunt.</p>
+								<h4 id="one">one</h4>
+								<p>Occaecat commodo aliqua delectus. Fap craft beer deserunt
+									skateboard ea. Lomo bicycle rights adipisicing banh mi, velit
+									ea sunt next level locavore single-origin coffee in magna
+									veniam. High life id vinyl, echo park consequat quis aliquip
+									banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi
+									DIY minim messenger bag. Cred ex in, sustainable delectus
+									consectetur fanny pack iphone.</p>
+								<h4 id="two">two</h4>
+								<p>In incididunt echo park, officia deserunt mcsweeney's
+									proident master cleanse thundercats sapiente veniam. Excepteur
+									VHS elit, proident shoreditch +1 biodiesel laborum craft beer.
+									Single-origin coffee wayfarers irure four loko, cupidatat terry
+									richardson master cleanse. Assumenda you probably haven't heard
+									of them art party fanny pack, tattooed nulla cardigan tempor
+									ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi
+									sustainable. Elit wolf voluptate, lo-fi ea portland before they
+									sold out four loko. Locavore enim nostrud mlkshk brooklyn
+									nesciunt.</p>
+								<h4 id="three">three</h4>
+								<p>Ad leggings keytar, brunch id art party dolor labore.
+									Pitchfork yr enim lo-fi before they sold out qui. Tumblr
+									farm-to-table bicycle rights whatever. Anim keffiyeh carles
+									cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon
+									irure. Cosby sweater lomo jean shorts, williamsburg hoodie
+									minim qui you probably haven't heard of them et cardigan trust
+									fund culpa biodiesel wes anderson aesthetic. Nihil tattooed
+									accusamus, cred irony biodiesel keffiyeh artisan ullamco
+									consequat. Keytar twee blog, culpa messenger bag marfa whatever
+									delectus food truck. Sapiente synth id assumenda. Locavore sed
+									helvetica cliche irony, thundercats you probably haven't heard
+									of them consequat hoodie gluten-free lo-fi fap aliquip. Labore
+									elit placeat before they sold out, terry richardson proident
+									brunch nesciunt quis cosby sweater pariatur keffiyeh ut
+									helvetica artisan. Cardigan craft beer seitan readymade velit.
+									VHS chambray laboris tempor veniam. Anim mollit minim commodo
+									ullamco thundercats.</p>
+							</div>
+						</div>
+						<div class="html-right">
+							<h4>Scrollspy in navbar</h4>
+							<p>
+								Bootstrap: <a
+									href="https://getbootstrap.com/docs/4.3/components/scrollspy/#example-in-navbar"
+									target="_blank">https://getbootstrap.com/docs/4.3/components/scrollspy</a>
+							</p>
+							<p>scrollUp() - Scroll up</p>
+							<p>scrollDown() - Scroll down</p>
+							<p>isSelected(String value) - Check if corresponding element selected</p>
+                            <p>click(String value) - Click on element</p>
+						</div>
+					</div>
+
+					<div class="doc-space line">
+						<div class="html-left">
+							<nav id="navbar-example3" class="navbar navbar-light bg-light">
+								<a class="navbar-brand" href="#">Navbar</a>
+								<nav class="nav nav-pills flex-column">
+									<a class="nav-link" href="#item-1">Item 1</a>
+									<nav class="nav nav-pills flex-column">
+										<a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a> <a
+											class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>
+									</nav>
+									<a class="nav-link" href="#item-2">Item 2</a> <a
+										class="nav-link" href="#item-3">Item 3</a>
+									<nav class="nav nav-pills flex-column">
+										<a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a> <a
+											class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
+									</nav>
+								</nav>
+							</nav>
+
+							<div data-spy="scroll" data-target="#navbar-example3"
+								data-offset="0" class="scrollspy-example-2">
+								<h4 id="item-1">Item 1</h4>
+								<p>Ex consequat commodo adipisicing exercitation aute
+									excepteur occaecat ullamco duis aliqua id magna ullamco eu. Do
+									aute ipsum ipsum ullamco cillum consectetur ut et aute
+									consectetur labore. Fugiat laborum incididunt tempor eu
+									consequat enim dolore proident. Qui laborum do non excepteur
+									nulla magna eiusmod consectetur in. Aliqua et aliqua officia
+									quis et incididunt voluptate non anim reprehenderit adipisicing
+									dolore ut consequat deserunt mollit dolore. Aliquip nulla enim
+									veniam non fugiat id cupidatat nulla elit cupidatat commodo
+									velit ut eiusmod cupidatat elit dolore.</p>
+								<h5 id="item-1-1">Item 1-1</h5>
+								<p>Amet tempor mollit aliquip pariatur excepteur commodo do
+									ea cillum commodo Lorem et occaecat elit qui et. Aliquip labore
+									ex ex esse voluptate occaecat Lorem ullamco deserunt. Aliqua
+									cillum excepteur irure consequat id quis ea. Sit proident
+									ullamco aute magna pariatur nostrud labore. Reprehenderit
+									aliqua commodo eiusmod aliquip est do duis amet proident magna
+									consectetur consequat eu commodo fugiat non quis. Enim aliquip
+									exercitation ullamco adipisicing voluptate excepteur minim
+									exercitation minim minim commodo adipisicing exercitation
+									officia nisi adipisicing. Anim id duis qui consequat labore
+									adipisicing sint dolor elit cillum anim et fugiat.</p>
+								<h5 id="item-1-2">Item 1-2</h5>
+								<p>Cillum nisi deserunt magna eiusmod qui eiusmod velit
+									voluptate pariatur laborum sunt enim. Irure laboris mollit
+									consequat incididunt sint et culpa culpa incididunt adipisicing
+									magna magna occaecat. Nulla ipsum cillum eiusmod sint elit
+									excepteur ea labore enim consectetur in labore anim. Proident
+									ullamco ipsum esse elit ut Lorem eiusmod dolor et eiusmod. Anim
+									occaecat nulla in non consequat eiusmod velit incididunt.</p>
+								<h4 id="item-2">Item 2</h4>
+								<p>Quis magna Lorem anim amet ipsum do mollit sit cillum
+									voluptate ex nulla tempor. Laborum consequat non elit enim
+									exercitation cillum aliqua consequat id aliqua. Esse ex
+									consectetur mollit voluptate est in duis laboris ad sit ipsum
+									anim Lorem. Incididunt veniam velit elit elit veniam Lorem
+									aliqua quis ullamco deserunt sit enim elit aliqua esse irure.
+									Laborum nisi sit est tempor laborum mollit labore officia
+									laborum excepteur commodo non commodo dolor excepteur commodo.
+									Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in
+									proident.</p>
+								<h4 id="item-3">Item 3</h4>
+								<p>Quis anim sit do amet fugiat dolor velit sit ea ea do
+									reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim
+									proident occaecat excepteur aliquip culpa aute tempor
+									reprehenderit. Deserunt tempor mollit elit ex pariatur dolore
+									velit fugiat mollit culpa irure ullamco est ex ullamco
+									excepteur.</p>
+								<h5 id="item-3-1">Item 3-1</h5>
+								<p>Deserunt quis elit Lorem eiusmod amet enim enim amet
+									minim Lorem proident nostrud. Ea id dolore anim exercitation
+									aute fugiat labore voluptate cillum do laboris labore. Ex velit
+									exercitation nisi enim labore reprehenderit labore nostrud ut
+									ut. Esse officia sunt duis aliquip ullamco tempor eiusmod
+									deserunt irure nostrud irure. Ullamco proident veniam laboris
+									ea consectetur magna sunt ex exercitation aliquip minim enim
+									culpa occaecat exercitation. Est tempor excepteur aliquip
+									laborum consequat do deserunt laborum esse eiusmod irure
+									proident ipsum esse qui.</p>
+								<h5 id="item-3-2">Item 3-2</h5>
+								<p>Labore sit culpa commodo elit adipisicing sit aliquip
+									elit proident voluptate minim mollit nostrud aute reprehenderit
+									do. Mollit excepteur eu Lorem ipsum anim commodo sint labore
+									Lorem in exercitation velit incididunt. Occaecat consectetur
+									nisi in occaecat proident minim enim sunt reprehenderit
+									exercitation cupidatat et do officia. Aliquip consequat ad
+									labore labore mollit ut amet. Sit pariatur tempor proident in
+									veniam culpa aliqua excepteur elit magna fugiat eiusmod amet
+									officia.</p>
+							</div>
+						</div>
+						<div class="html-right">
+							<h4>Scrollspy with nested nav</h4>
+							<p>
+								Bootstrap: <a
+									href="https://getbootstrap.com/docs/4.3/components/scrollspy/#example-with-nested-nav"
+									target="_blank">https://getbootstrap.com/docs/4.3/components/scrollspy</a>
+							</p>
+							<p>scrollUp() - Scroll up</p>
+							<p>scrollDown() - Scroll down</p>
+							<p>isSelected(String value) - Check if corresponding element selected</p>
+                            <p>click(String value) - Click on element</p>
+						</div>
+					</div>
+
+					<div class="doc-space line">
+						<div class="html-left">
+							<div id="list-example" class="list-group">
+								<a class="list-group-item list-group-item-action"
+									href="#list-item-1">Item 1</a> <a
+									class="list-group-item list-group-item-action"
+									href="#list-item-2">Item 2</a> <a
+									class="list-group-item list-group-item-action"
+									href="#list-item-3">Item 3</a> <a
+									class="list-group-item list-group-item-action"
+									href="#list-item-4">Item 4</a>
+							</div>
+							<div data-spy="scroll" data-target="#list-example"
+								data-offset="0" class="scrollspy-example">
+								<h4 id="list-item-1">Item 1</h4>
+								<p>Ex consequat commodo adipisicing exercitation aute
+									excepteur occaecat ullamco duis aliqua id magna ullamco eu. Do
+									aute ipsum ipsum ullamco cillum consectetur ut et aute
+									consectetur labore. Fugiat laborum incididunt tempor eu
+									consequat enim dolore proident. Qui laborum do non excepteur
+									nulla magna eiusmod consectetur in. Aliqua et aliqua officia
+									quis et incididunt voluptate non anim reprehenderit adipisicing
+									dolore ut consequat deserunt mollit dolore. Aliquip nulla enim
+									veniam non fugiat id cupidatat nulla elit cupidatat commodo
+									velit ut eiusmod cupidatat elit dolore.</p>
+								<h4 id="list-item-2">Item 2</h4>
+								<p>Quis magna Lorem anim amet ipsum do mollit sit cillum
+									voluptate ex nulla tempor. Laborum consequat non elit enim
+									exercitation cillum aliqua consequat id aliqua. Esse ex
+									consectetur mollit voluptate est in duis laboris ad sit ipsum
+									anim Lorem. Incididunt veniam velit elit elit veniam Lorem
+									aliqua quis ullamco deserunt sit enim elit aliqua esse irure.
+									Laborum nisi sit est tempor laborum mollit labore officia
+									laborum excepteur commodo non commodo dolor excepteur commodo.
+									Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in
+									proident.</p>
+								<h4 id="list-item-3">Item 3</h4>
+								<p>Quis anim sit do amet fugiat dolor velit sit ea ea do
+									reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim
+									proident occaecat excepteur aliquip culpa aute tempor
+									reprehenderit. Deserunt tempor mollit elit ex pariatur dolore
+									velit fugiat mollit culpa irure ullamco est ex ullamco
+									excepteur.</p>
+								<h4 id="list-item-4">Item 4</h4>
+								<p>Quis anim sit do amet fugiat dolor velit sit ea ea do
+									reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim
+									proident occaecat excepteur aliquip culpa aute tempor
+									reprehenderit. Deserunt tempor mollit elit ex pariatur dolore
+									velit fugiat mollit culpa irure ullamco est ex ullamco
+									excepteur.. Deserunt tempor mollit elit ex pariatur dolore
+									velit fugiat mollit culpa irure ullamco est ex ullamco
+									excepteur.</p>
+							</div>
+						</div>
+						<div class="html-right">
+							<h4>Scrollspy with list-group</h4>
+							<p>
+								Bootstrap: <a
+									href="https://getbootstrap.com/docs/4.3/components/scrollspy/#example-with-list-group"
+									target="_blank">https://getbootstrap.com/docs/4.3/components/scrollspy</a>
+							</p>
+						    <p>scrollUp() - Scroll up</p>
+							<p>scrollDown() - Scroll down</p>
+							<p>isSelected(String value) - Check if corresponding element selected</p>
+							<p>click(String value) - Click on element</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		</main>
+	</div>
+	<!--<div class="replace right-side-bar">replace</div>-->
+</div>
+<footer>
+    <div class="replace footer">replace</div>
+</footer>
+
+<script>
+    setTimeout(function() {
+		$('.invisible')[0].classList.remove("invisible");
+		$('#ghost-button')[0].classList.add("invisible");
+	}, 3000);
+
+
+
+
+
+
+</script>
+<script>
+    const volumeSpan = $('#volume-value')[0];
+    volumeSpan.value = $('#volume')[0].value;
+    function showVal(val) {
+        volumeSpan.value = val;
+    }
+
+
+
+
+
+
+</script>
+<script type="text/javascript">
+    $('#multi-dropdown').multiselect();
+
+
+
+
+
+
+</script>
+<Script language="JavaScript">
+    UUI.Vertical_Menu.init({"open":true});
+
+
+
+
+
+
+</script>
+<script>
+    $('.selectpicker').selectpicker();
+
+
+
+
+
+
+</script>
+<script>
+		includeSideBar();
+		activateTopElement(5,2);
+
+
+
+
+
+
+</script>
+</body>
+</html>
+
