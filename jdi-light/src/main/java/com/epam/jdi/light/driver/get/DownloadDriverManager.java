@@ -63,6 +63,8 @@ public class DownloadDriverManager {
             }
             wdm.setup();
             logger.info("Download driver: '" +  driverName + "' successfully");
+            ProcessBuilder pb = new ProcessBuilder("chmod", "777", "/home/travis/.m2/repository/webdriver/chromedriver/linux64/76.0.3809.126/chromedriver");
+            Process p = pb.start();
         } catch (Exception ex) {
             throw exception("Can't download latest driver for " + driverType
                     + ". Exception " + safeException(ex));
