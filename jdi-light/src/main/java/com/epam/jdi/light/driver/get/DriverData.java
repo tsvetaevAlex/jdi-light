@@ -123,6 +123,7 @@ public class DriverData {
             ChromeOptions cap = new ChromeOptions();
             cap.addArguments("--disable-web-security", "--disable-extensions", "test-type");
             cap.addArguments("--verbose");
+            cap.addArguments("--whitelist-ip $*");
             cap.setPageLoadStrategy(PAGE_LOAD_STRATEGY);
             cap.setCapability(ACCEPT_SSL_CERTS, true);
             cap.setCapability(UNEXPECTED_ALERT_BEHAVIOR, ACCEPT);
