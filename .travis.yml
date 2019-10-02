@@ -11,4 +11,5 @@ after_success:
   - echo "Build was successful - travis test result $TRAVIS_TEST_RESULT"
 after_script:
   - ls -la
+  - ls -la /home/travis/.m2/repository/webdriver/chromedriver/linux64/76.0.3809.126/chromedriver
   - echo "Script finished"
