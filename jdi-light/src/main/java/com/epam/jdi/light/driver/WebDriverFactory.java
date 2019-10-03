@@ -12,6 +12,7 @@ import com.epam.jdi.tools.map.MapArray;
 import com.epam.jdi.tools.pairs.Pair;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.util.concurrent.locks.Lock;
@@ -83,6 +84,10 @@ public class WebDriverFactory {
                 Value(EDGE, t -> CHROME_INFO.getDriver())
         );
         System.out.println("Here=====================");
+       ChromeOptions op=(ChromeOptions)((RemoteWebDriver) driver).getCapabilities();
+       op.asMap().forEach((f,k)->
+               System.out.println("MAP: " + f + " / " + k)
+       );
         System.out.println("CAPA: " + ((RemoteWebDriver) driver).getCapabilities().toString());
         if (driver == null)
             throw exception("Unknown driver: " + type);
