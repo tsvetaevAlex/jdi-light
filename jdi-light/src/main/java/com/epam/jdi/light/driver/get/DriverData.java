@@ -124,6 +124,7 @@ public class DriverData {
             cap.addArguments("--disable-web-security", "--disable-extensions", "test-type");
             cap.addArguments("--verbose");
             cap.addArguments("--whitelisted-ips='*'");
+            cap.addArguments("--headless");
             System.out.println("REAAAAADY");
             cap.setPageLoadStrategy(PAGE_LOAD_STRATEGY);
             cap.setCapability(ACCEPT_SSL_CERTS, true);

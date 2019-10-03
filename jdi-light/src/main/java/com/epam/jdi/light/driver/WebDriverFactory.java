@@ -82,6 +82,7 @@ public class WebDriverFactory {
                 Value(OPERA, t -> CHROME_INFO.getDriver()),
                 Value(EDGE, t -> CHROME_INFO.getDriver())
         );
+        System.out.println("Here=====================");
         System.out.println("CAPA: " + ((RemoteWebDriver) driver).getCapabilities().toString());
         if (driver == null)
             throw exception("Unknown driver: " + type);
