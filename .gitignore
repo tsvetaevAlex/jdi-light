@@ -16,4 +16,8 @@ downloads/
 .settings/
 .project
 .classpath
+<<<<<<< HEAD
+=======
+.allure/
+>>>>>>> bootstrap
 test-output/
