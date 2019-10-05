@@ -1,6 +1,8 @@
 language: java
 jdk:
 - openjdk8
+addons:
+  chrome: stable
 script:
   - mvn clean verify -Ddriver=chrome
 after_failure:
@@ -12,4 +14,5 @@ after_success:
 after_script:
   - ls -la
   - ls -la /home/travis/.m2/repository/webdriver/chromedriver/linux64/76.0.3809.126/chromedriver
+  - google-chrome-stable --version
   - echo "Script finished"

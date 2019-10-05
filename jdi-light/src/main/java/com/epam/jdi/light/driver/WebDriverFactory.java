@@ -10,6 +10,7 @@ import com.epam.jdi.tools.Safe;
 import com.epam.jdi.tools.func.JFunc;
 import com.epam.jdi.tools.map.MapArray;
 import com.epam.jdi.tools.pairs.Pair;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -84,7 +85,7 @@ public class WebDriverFactory {
                 Value(EDGE, t -> CHROME_INFO.getDriver())
         );
         System.out.println("Here=====================");
-       ChromeOptions op=(ChromeOptions)((RemoteWebDriver) driver).getCapabilities();
+       Capabilities op=((RemoteWebDriver) driver).getCapabilities();
        op.asMap().forEach((f,k)->
                System.out.println("MAP: " + f + " / " + k)
        );

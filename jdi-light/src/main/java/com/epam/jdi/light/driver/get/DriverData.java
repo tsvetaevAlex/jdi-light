@@ -123,7 +123,9 @@ public class DriverData {
             ChromeOptions cap = new ChromeOptions();
             cap.addArguments("--disable-web-security", "--disable-extensions", "test-type");
             cap.addArguments("--verbose");
-            cap.addArguments("--whitelisted-ips='*'");
+            cap.addArguments("--whitelisted-ips");
+            cap.addArguments("--no-sandbox");
+            cap.addArguments("--disable-extensions");
             cap.addArguments("--headless");
             System.out.println("REAAAAADY");
             cap.setPageLoadStrategy(PAGE_LOAD_STRATEGY);
