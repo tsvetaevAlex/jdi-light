@@ -16,7 +16,6 @@ import static com.epam.jdi.light.logger.LogLevels.DEBUG;
 public class Popover extends Section {
 
     public Button popoverButton;
-    @NoWait //@WaitTimeout(2)
     public MediaObject container;
     public Text header;
     public Text body;

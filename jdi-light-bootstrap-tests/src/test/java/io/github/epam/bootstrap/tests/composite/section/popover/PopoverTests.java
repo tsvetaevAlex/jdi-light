@@ -76,7 +76,6 @@ public class PopoverTests extends TestsInit {
                 .core()
                 .hasClass("popover-header");
         popover.container.click();
-        // popover.popoverButton.base().waitSec(1);
         popover.popoverButton
                 .is()
                 .core()
@@ -85,11 +84,11 @@ public class PopoverTests extends TestsInit {
                 .is()
                 .enabled();
         popover.popoverButton.click();
-        // popover.popoverButton.base().waitSec(1);
         popover.popoverButton
                 .is()
                 .core()
                 .attr("aria-describedby", "");
+        popover.container.base().waitSec(1);
         popover.container.is().disappear();
     }
 
