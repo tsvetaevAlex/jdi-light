@@ -14,7 +14,7 @@ import static io.github.epam.states.States.shouldBeLoggedIn;
 import static org.hamcrest.Matchers.is;
 
 /**
- * Created by Roman Bordiugov on 7.10.2019
+ * Created by Roman Bordiugov on 11.10.2019
  * Email: Roman_Bordiugov@epam.com; Skype: rome_hk
  */
 
