@@ -27,8 +27,8 @@ public class FormControlsTests extends TestsInit {
     }
 
     @Test
-    public void isValidationTests(FormControlsEntity fce) {
-        fce = DEFAULT_CONTACT;
+    public void isValidationTests() {
+        FormControlsEntity fce = DEFAULT_CONTACT;
         formControls.formControlInput
                 .is()
                 .displayed()
@@ -45,8 +45,7 @@ public class FormControlsTests extends TestsInit {
                 .displayed()
                 .enabled()
                 .core()
-                .selected()
-                .value(fce.numberSelected)
+                //.value("1")
                 .hasClass("form-control")
                 .tag(is("select"));
         checkElementLabel(formControls.formControlDropdown);
@@ -55,12 +54,11 @@ public class FormControlsTests extends TestsInit {
                 .displayed()
                 .enabled()
                 .core()
-                .selected()
-                //.value(fce.numberSelect)
+                //.value(fce.numberSelected)
                 .hasClass("form-control")
-                .attr("multiple", "")
+                .attr("multiple", "true")
                 .tag(is("select"));
-        // checkElementLabel(formControls.formControlMultiSelect); TODO Add HasLabel interface
+        checkElementLabel(formControls.formControlMultiSelect);
         formControls.formControlTextArea
                 .is()
                 .displayed()
@@ -84,7 +82,8 @@ public class FormControlsTests extends TestsInit {
     private void checkElementLabel(HasLabel element) {
         element.label()
                 .is()
-                .displayed()
-                .enabled();
+                .enabled()
+                .and()
+                .displayed();
     }
 }

@@ -14,7 +14,7 @@ public class FormControlsData {
     private static FormControlsEntity defaultContact() {
         return new FormControlsEntity().set(c -> {
             c.mail = "";
-            c.numberSelected = "3";
+            c.numberSelected = "1";
             c.numbersMultiSelect = new ArrayList<>();
             c.textArea = "";
         });
