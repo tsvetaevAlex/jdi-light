@@ -16,14 +16,14 @@ import io.github.com.entities.form.FormControlsEntity;
 public class FormControls extends Form<FormControlsEntity> {
 
     @UI("#exampleFormControlInput1")
-    public TextField formControlInput;
+    public TextField mail;
 
     @UI("#exampleFormControlSelect1")
-    public DropdownSelect formControlDropdown;
+    public DropdownSelect numberSelected;
 
     @UI("#exampleFormControlSelect2")
-    public MultiSelector formControlMultiSelect;
+    public MultiSelector numbersMultiSelect;
 
     @UI("#exampleFormControlTextarea1")
-    public TextArea formControlTextArea;
+    public TextArea textArea;
 }
