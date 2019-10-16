@@ -52,5 +52,7 @@ public class ForEachUseCaseTest extends TestsInit {
         navbarSection.navbarBrandJList.forEach(BaseValidations::baseValidation);
         navbarSection.navbarBrandJList.forEach(NavbarBrand::unhighlight);
 
+        navbarSection.navbarBrandJList.forEach( e -> {
+            BaseValidations.baseValidation(e);});
     }
 }
