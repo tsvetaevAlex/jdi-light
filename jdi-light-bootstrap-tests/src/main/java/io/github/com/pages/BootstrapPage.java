@@ -23,7 +23,6 @@ import com.epam.jdi.light.ui.bootstrap.elements.complex.ListGroup;
 import com.epam.jdi.light.ui.bootstrap.elements.complex.MediaObject;
 import com.epam.jdi.light.ui.bootstrap.elements.complex.Navbar;
 import com.epam.jdi.light.ui.bootstrap.elements.complex.Popover;
-import io.github.com.sections.modal.ModalVaryingContent;
 import io.github.com.sections.ButtonAddons;
 import io.github.com.sections.ButtonGroupBasicExample;
 import io.github.com.sections.ButtonGroupNesting;
@@ -112,9 +111,10 @@ import io.github.com.sections.card.CardImageOverlays;
 import io.github.com.sections.card.CardUtilities;
 import io.github.com.sections.card.CardWithGridMarkup;
 import io.github.com.sections.card.CardWithHeaderAndFooter;
-import io.github.com.sections.modal.SectionModalLongScrolling;
 import io.github.com.sections.form.FormControls;
 import io.github.com.sections.form.FormControlsFileInput;
+import io.github.com.sections.modal.ModalVaryingContent;
+import io.github.com.sections.modal.SectionModalLongScrolling;
 import io.github.com.sections.navbar.NavbarColorScheme;
 import io.github.com.sections.navbar.NavbarForm;
 import io.github.com.sections.navbar.NavbarSupportedContent;
@@ -231,6 +231,7 @@ public class BootstrapPage extends WebPage {
     public static Carousel carouselWithFadeTransition;
     @UI("#carousel-example-interval")
     public static Carousel carouselWithCustomInterval;
+
     //region COLLAPSE
     @JDropdown(expand = "#bs-collapse-link",
             value = "#bs-collapse-one",
@@ -519,27 +520,7 @@ public class BootstrapPage extends WebPage {
     public static SpinnerSize spinnerSize;
     @UI("body")
     public static CheckboxesAndRadiosWithoutLabels checkboxesAndRadiosWithoutLabels;
-    // Button addons
-    @UI("#card-image-overlay")
-    public static CardImageOverlays cardImageOverlays;
-    @UI("#navbar-dark-colorscheme")
-    public static NavbarColorScheme navbarDarkColorScheme;
-    @UI("#navbar-blue-colorscheme")
-    public static NavbarColorScheme navbarBlueColorScheme;
-    @UI("#navbar-light-colorscheme")
-    public static NavbarColorScheme navbarLightColorScheme;
-    @UI("#list-example>a")
-    public static ListGroup listGroupForScrollSpy;
-    @UI("#list-example~div")
-    public static ScrollSpyNav scrollSpyWithListGroup;
-    @UI("#navbar-example3")
-    public static NestedNav nestedNav;
-    @UI("#navbar-example3~div")
-    public static ScrollSpyNav scrollSpyWithNestedNav;
-    @UI("#navbar-example2")
-    public static NavbarWithDropdown navbarWithDropdown;
-    @UI("#navbar-example2~div")
-    public static ScrollSpyNav scrollSpyInNavbar;
+
     //region Form
     @UI("#validation-submit-form")
     public static FormCustomStyles formCustomStyles;
@@ -551,15 +532,12 @@ public class BootstrapPage extends WebPage {
     public static FormOverview formOverview;
     //endregion
 
-
     @UI("//h4[.='Navbar - Text']/../..")
     public static NavbarText navbarText;
-
     @UI("#striped-base .progress")
     public static JList<ProgressSection> progressSections;
     @UI("#progress-height .progress")
     public static JList<ProgressSection> progressHeightSections;
-
     @UI("#button-with-spinner-and-text")
     public static ButtonWithSpinner buttonWithSpinnerAndText;
     @UI("#button-with-spinner")
