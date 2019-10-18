@@ -88,7 +88,6 @@ public class PopoverTests extends TestsInit {
                 .is()
                 .core()
                 .attr("aria-describedby", "");
-        popover.container.base().waitSec(1);
         popover.container.is().disappear();
     }
 

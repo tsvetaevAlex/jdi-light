@@ -3,6 +3,7 @@ package com.epam.jdi.light.ui.bootstrap.elements.complex;
 import com.epam.jdi.light.common.JDIAction;
 import com.epam.jdi.light.elements.composite.Section;
 import com.epam.jdi.light.elements.pageobjects.annotations.NoWait;
+import com.epam.jdi.light.elements.pageobjects.annotations.WaitTimeout;
 import com.epam.jdi.light.ui.bootstrap.elements.common.Button;
 import com.epam.jdi.light.ui.bootstrap.elements.common.Text;
 
@@ -15,8 +16,9 @@ import static com.epam.jdi.light.logger.LogLevels.DEBUG;
 
 public class Popover extends Section {
 
-    public Button popoverButton;
+    @WaitTimeout(2)
     public MediaObject container;
+    public Button popoverButton;
     public Text header;
     public Text body;
 
