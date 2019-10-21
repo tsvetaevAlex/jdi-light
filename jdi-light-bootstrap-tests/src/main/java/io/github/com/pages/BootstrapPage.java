@@ -51,6 +51,7 @@ import io.github.com.sections.form.CheckboxesAndRadiosWithoutLabels;
 import io.github.com.sections.form.CheckboxesCustom;
 import io.github.com.sections.form.CheckboxesDefault;
 import io.github.com.sections.form.CheckboxesDefaultInline;
+import io.github.com.sections.form.FormGrid;
 import io.github.com.sections.inputgroup.CustomSelect;
 import io.github.com.sections.inputgroup.CustomSelectWithButton;
 import io.github.com.sections.form.FormBrowserDefaults;
@@ -551,6 +552,8 @@ public class BootstrapPage extends WebPage {
     public static FormOverview formOverview;
     @UI("#form-horizontal")
     public static FormHorizontal formHorizontal;
+    @UI("#form-grid-base")
+    public static FormGrid formGrid;
 
 
     @UI("//h4[.='Navbar - Text']/../..")
