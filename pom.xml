@@ -22,6 +22,11 @@
             <artifactId>coveralls-maven-plugin</artifactId>
             <version>4.3.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.demidenko05</groupId>
+            <artifactId>a-javabeans</artifactId>
+            <version>1.0.4</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -49,6 +54,7 @@
         </plugins>
     </build>
 
+    <!-- Thanks for using https://jar-download.com -->
     <modules>
         <module>jdi-light</module>
         <module>jdi-light-examples</module>
