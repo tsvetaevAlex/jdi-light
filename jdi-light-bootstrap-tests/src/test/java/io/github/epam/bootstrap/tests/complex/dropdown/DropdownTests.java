@@ -1,4 +1,4 @@
-package io.github.epam.bootstrap.tests.common;
+package io.github.epam.bootstrap.tests.complex.dropdown;
 
 import io.github.epam.TestsInit;
 import org.testng.annotations.BeforeMethod;
@@ -33,7 +33,7 @@ import static org.hamcrest.Matchers.is;
  * Email: daniil_kopylov@epam.com
  */
 
-public class DrowdownTests extends TestsInit {
+public class DropdownTests extends TestsInit {
     private static final String DROPDOWN = "Dropdown";
 
     private static final String FIRSTITEM = "Action";
