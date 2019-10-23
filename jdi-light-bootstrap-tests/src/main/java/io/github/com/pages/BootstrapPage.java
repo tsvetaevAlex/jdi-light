@@ -2,6 +2,7 @@ package io.github.com.pages;
 
 import com.epam.jdi.light.elements.common.UIElement;
 import com.epam.jdi.light.elements.complex.JList;
+import com.epam.jdi.light.elements.complex.WebList;
 import com.epam.jdi.light.elements.composite.WebPage;
 import com.epam.jdi.light.elements.pageobjects.annotations.locators.JDropdown;
 import com.epam.jdi.light.elements.pageobjects.annotations.locators.UI;
@@ -26,6 +27,7 @@ import com.epam.jdi.light.ui.bootstrap.elements.complex.Collapse;
 import com.epam.jdi.light.ui.bootstrap.elements.complex.ListGroup;
 import com.epam.jdi.light.ui.bootstrap.elements.complex.Navbar;
 import com.epam.jdi.light.ui.bootstrap.elements.complex.Popover;
+import io.github.com.sections.DropdownWithExtraContent;
 import io.github.com.sections.form.FormGrid;
 import io.github.com.sections.modal.ModalTooltipsAndPopovers;
 import io.github.com.sections.modal.ModalVaryingContent;
@@ -105,13 +107,10 @@ import io.github.com.sections.listgroup.ListGroupLinks;
 import io.github.com.sections.listgroup.ListGroupWithBadges;
 import io.github.com.sections.modal.ModalLiveDemo;
 import io.github.com.sections.modal.ModalOptionalSizes;
-import io.github.com.sections.modal.ModalVaryingContent;
 import io.github.com.sections.modal.ModalVerticallyCentered;
 import io.github.com.sections.modal.SectionModalLongScrolling;
 import io.github.com.sections.modal.gridmodal.GridModalSection;
 import io.github.com.sections.navbar.NavbarColorScheme;
-import io.github.com.sections.MediaObjectNesting;
-import io.github.com.sections.MediaObjectSample;
 import io.github.com.sections.navbar.NavbarSection;
 import io.github.com.sections.navbar.NavbarExternalContent;
 import io.github.com.sections.navbar.NavbarForm;
@@ -199,6 +198,8 @@ public class BootstrapPage extends WebPage {
     public static Dropdown rightAllignedDropdown;
     @UI("#leftAllignedDropdown")
     public static Dropdown leftAllignedDropdown;
+    @JDropdown(root="#dropdown-content-header")
+    public static DropdownWithExtraContent dropdownContentWithHeader;
     @UI("#simple-alert")
     public static Alert simpleAlert;
     @UI("#dismissible-alert")
