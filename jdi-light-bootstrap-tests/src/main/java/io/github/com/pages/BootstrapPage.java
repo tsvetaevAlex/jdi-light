@@ -2,7 +2,6 @@ package io.github.com.pages;
 
 import com.epam.jdi.light.elements.common.UIElement;
 import com.epam.jdi.light.elements.complex.JList;
-import com.epam.jdi.light.elements.complex.WebList;
 import com.epam.jdi.light.elements.composite.WebPage;
 import com.epam.jdi.light.elements.pageobjects.annotations.locators.JDropdown;
 import com.epam.jdi.light.elements.pageobjects.annotations.locators.UI;
@@ -27,7 +26,9 @@ import com.epam.jdi.light.ui.bootstrap.elements.complex.Collapse;
 import com.epam.jdi.light.ui.bootstrap.elements.complex.ListGroup;
 import com.epam.jdi.light.ui.bootstrap.elements.complex.Navbar;
 import com.epam.jdi.light.ui.bootstrap.elements.complex.Popover;
-import io.github.com.sections.DropdownWithExtraContent;
+import io.github.com.sections.dropdown.DropdownWithContentDivider;
+import io.github.com.sections.dropdown.DropdownWithContentHeader;
+import io.github.com.sections.dropdown.DropdownWithContentText;
 import io.github.com.sections.form.FormGrid;
 import io.github.com.sections.modal.ModalTooltipsAndPopovers;
 import io.github.com.sections.modal.ModalVaryingContent;
@@ -199,7 +200,11 @@ public class BootstrapPage extends WebPage {
     @UI("#leftAllignedDropdown")
     public static Dropdown leftAllignedDropdown;
     @UI("#dropdown-content-header")
-    public static DropdownWithExtraContent dropdownContentWithHeader;
+    public static DropdownWithContentHeader dropdownWithContentHeader;
+    @UI("#dropdown-content-divider")
+    public static DropdownWithContentDivider dropdownWithContentDivider;
+    @UI("#dropdown-content-text")
+    public static DropdownWithContentText dropdownWithContentText;
     @UI("#simple-alert")
     public static Alert simpleAlert;
     @UI("#dismissible-alert")
