@@ -100,8 +100,8 @@ public class FormsSelectMenuTests extends TestsInit {
         formsSelectMenuSmall.optionsSelectMenu.get(i).is().text(optionText);
         formsSelectMenuSmall.optionsSelectMenu.get(i).assertThat().attr("value", value);
 
-        formsSelectMenuMultiple.optionsSelectMenu.get(i).is().text(optionText);
-        formsSelectMenuMultiple.optionsSelectMenu.get(i).assertThat().attr("value", value);
+        formsSelectMenuMultiple.list().get(i).is().text(optionText);
+        formsSelectMenuMultiple.list().get(i).assertThat().attr("value", value);
 
         formsSelectMenuSize.optionsSelectMenu.get(i).is().text(optionText);
         formsSelectMenuSize.optionsSelectMenu.get(i).assertThat().attr("value", value);
@@ -112,7 +112,7 @@ public class FormsSelectMenuTests extends TestsInit {
         formsSelectMenuLarge.selectedOptionsSelectMenu.is().text("Open this select menu");
         formsSelectMenu.selectedOptionsSelectMenu.is().text("Open this select menu");
         formsSelectMenuSmall.selectedOptionsSelectMenu.is().text("Open this select menu");
-        formsSelectMenuMultiple.selectedOptionsSelectMenu.is().text("Open this select menu");
+        formsSelectMenuMultiple.is().selected("Open this select menu");
         formsSelectMenuSize.selectedOptionsSelectMenu.is().text("Open this select menu");
     }
 
@@ -129,5 +129,11 @@ public class FormsSelectMenuTests extends TestsInit {
 
         formsSelectMenuSize.optionsSelectMenu.get(4).click();
         assertEquals(formsSelectMenuSize.getValue(), "Three");
+    }
+
+    @Test
+    public void selectMultipleOptionFormsSelectMenuTest() {
+        formsSelectMenuMultiple.check(2, 3);
+        assertEquals(formsSelectMenuMultiple.checked().toArray(), new Object[]{"One", "Two"});
     }
 }

@@ -2,6 +2,7 @@ package io.github.com.pages;
 
 import com.epam.jdi.light.elements.common.UIElement;
 import com.epam.jdi.light.elements.complex.JList;
+import com.epam.jdi.light.elements.complex.Selector;
 import com.epam.jdi.light.elements.composite.WebPage;
 import com.epam.jdi.light.elements.pageobjects.annotations.locators.JDropdown;
 import com.epam.jdi.light.elements.pageobjects.annotations.locators.UI;
@@ -282,7 +283,7 @@ public class BootstrapPage extends WebPage {
     @UI("#forms-select-menu-small")
     public static SelectMenu formsSelectMenuSmall;
     @UI("#forms-select-menu-multiple")
-    public static SelectMenu formsSelectMenuMultiple;
+    public static Selector formsSelectMenuMultiple;
     @UI("#forms-select-menu-size")
     public static SelectMenu formsSelectMenuSize;
     //endregion
